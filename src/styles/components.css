@@ -1,0 +1,57 @@
+@layer components {
+  header::before {
+    content: "";
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @apply fixed left-0 top-0 w-full h-0 opacity-0 bg-black/80 transition delay-300;
+  }
+
+  header.small::before {
+    height: 100px;
+    @apply md:h-44 opacity-100;
+  }
+
+  header.open::before {
+    @apply h-full opacity-100;
+  }
+
+  #toggler {
+    width: 28px;
+    height: 22px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  #toggler::before,
+  #toggler::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #ededed;
+    border-radius: 16px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out;
+  }
+
+  #toggler::before {
+    top: 0px;
+  }
+
+  #toggler::after {
+    top: 9px;
+    width: 70%;
+    left: 30%;
+  }
+
+  #toggler.open::before {
+    top: 9px;
+    transform: rotate(135deg);
+  }
+
+  #toggler.open::after {
+    top: 9px;
+    width: 100%;
+    left: 0;
+    transform: rotate(-135deg);
+  }
+}

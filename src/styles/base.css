@@ -1,0 +1,21 @@
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    background: #18191b;
+    color: #ededed;
+    font-family: "Inter", sans-serif;
+  }
+
+  #app {
+    @apply min-h-screen;
+  }
+
+  h1,
+  h2,
+  strong {
+    font-family: "Poppins", sans-serif;
+  }
+}
