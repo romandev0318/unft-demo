@@ -9,6 +9,7 @@ import { Hero } from "@/sections/Hero";
 import { Roadmap } from "@/sections/Roadmap";
 import { Showcase } from "@/sections/Showcase";
 import { Team } from "@/sections/Team";
+import { FAQ } from "@/sections/FAQ";
 
 const Home: NextPage = () => (
   <Layout>
@@ -19,6 +20,7 @@ const Home: NextPage = () => (
     <Showcase />
     <Distribution />
     <Team />
+    <FAQ />
   </Layout>
 );
 
