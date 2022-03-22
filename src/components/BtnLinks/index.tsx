@@ -7,8 +7,8 @@ type Props = {
 export const BtnLinks: React.FC<Props> = ({ links }) => (
   <>
     {links.map((link, i) => (
-      <a href={link.url} key={i}>
-        {link.label}
+      <a className='btn w-36 mb-6' href={link.url} key={i}>
+        <span>{link.label}</span>
       </a>
     ))}
   </>
