@@ -4,8 +4,6 @@ type Props = {
   cut: number;
 };
 
-const beforeW = (value: number) => `before:w-[${value}%]`;
-
 const colors = {
   purple: {
     bg: "bg-[#21284D]/30",
@@ -35,18 +33,20 @@ const colors = {
 };
 
 export const DistributionItem: React.FC<Props> = ({ label, color, cut }) => (
-  <li className='flex relative justify-between rounded-2xl distribution-item-border px-8 py-9'>
-    <span className='text-lg text-[#ABABAB] font-bold tracking-tighter z-10'>
+  <li className='flex relative justify-between rounded-2xl radial-border px-8 py-9'>
+    <span className='text-lg text-[#ABABAB] font-bold tracking-tight'>
       {label}
     </span>
-    <div className='flex items-center space-x-3 ml-4 z-10'>
+    <div className='flex items-center space-x-3 ml-4'>
       <div className={`w-24 h-5 relative rounded-lg ${colors[color].bg}`}>
         <div
           className={`h-full rounded-lg ${colors[color].progress}`}
           style={{ width: `${cut}%` }}
         ></div>
       </div>
-      <span className={`font-bold text-sm ${colors[color].text} whitespace-nowrap z-10`}>
+      <span
+        className={`font-bold text-sm ${colors[color].text} whitespace-nowrap`}
+      >
         {cut} %
       </span>
     </div>
