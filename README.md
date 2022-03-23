@@ -1,6 +1,6 @@
 # UNFT
 
-> App created with Next.js App + Tailwind CSS and powered with Typescript
+> App created with Next.js App + Tailwind CSS and powered with Typescript  
 > Web3.0 in progress
 
 ## Getting Started
