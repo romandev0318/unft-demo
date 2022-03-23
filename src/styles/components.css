@@ -160,7 +160,7 @@
     }
   }
 
-  .distribution-item-border {
+  .radial-border {
     background: radial-gradient(
         122.53% 72.31% at 9.88% 131.08%,
         #ffffff -20%,
@@ -181,7 +181,16 @@
     &::before {
       content: "";
 
-      @apply absolute p-[2.23px] top-0 left-0 right-0 bottom-0 rounded-[1.1rem] bg-black bg-clip-content;
+      @apply absolute p-[2.23px] top-0 left-0 right-0 bottom-0 rounded-[1.1rem] bg-black bg-clip-content -z-10;
     }
+  }
+
+  .showcase-title {
+    background: linear-gradient(
+      96.39deg,
+      #1c1c1c -9.54%,
+      #ffffff 49.6%,
+      #303030 105.26%
+    );
   }
 }
