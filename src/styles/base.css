@@ -9,8 +9,8 @@
     font-family: "Inter", sans-serif;
   }
 
-  #app {
-    @apply min-h-screen;
+  #__next {
+    @apply min-h-screen overflow-x-hidden;
   }
 
   h1,

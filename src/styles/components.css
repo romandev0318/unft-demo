@@ -185,6 +185,18 @@
     }
   }
 
+  .hero-border {
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    background: linear-gradient(#000, #000),
+      linear-gradient(117.58deg, #5a523c 9.14%, #3e331a 97.97%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    box-shadow: 0px 23px 70px 0px #000000;
+    z-index: 1;
+  }
+
   .showcase-title {
     background: linear-gradient(
       96.39deg,
