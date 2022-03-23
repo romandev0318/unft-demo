@@ -8,7 +8,7 @@ export const Team: React.FC = () => (
       Ordinary people who love their country
     </p>
 
-    <div className='grid grid-cols-3 gap-x-16 gap-y-10'>
+    <div className='grid grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-10'>
       {team.map((member, i) => (
         <TeamMember key={i} member={member} />
       ))}
