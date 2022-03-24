@@ -4,9 +4,12 @@ import { Container } from "@/components/Container";
 import { ArrowLinkIcon, HeartIcon, ShieldIcon } from "@/assets/svg";
 
 export const About: React.FC = () => (
-  <Container id='about' className='pl-6 pr-0 py-9 md:py-16 lg:pl-16 2xl:pl-36 lg:flex-row'>
+  <Container
+    id='about'
+    className='pl-6 pr-0 py-9 md:py-16 lg:pl-16 2xl:pl-36 lg:flex-row'
+  >
     <div className='max-w-lg xl:max-w-xl lg:mr-9 xl:mr-24 mb-16 lg:mb-0'>
-      <h2 className='block text-[28px] sm:text-4xl font-bold tracking-tight mb-16 xl:mb-32'>
+      <h2 className='block text-[28px] sm:text-4xl font-bold tracking-tight mb-8 xl:mb-32'>
         About Project
       </h2>
 
