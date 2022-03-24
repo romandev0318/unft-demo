@@ -4,7 +4,7 @@ import { Layout } from "@/components/Layout";
 
 import { About } from "@/sections/About";
 import { Collections } from "@/sections/Collections";
-import { Distribution } from "@/sections/Distribution";
+// import { Distribution } from "@/sections/Distribution";
 import { Hero } from "@/sections/Hero";
 import { Roadmap } from "@/sections/Roadmap";
 import { Showcase } from "@/sections/Showcase";
@@ -18,7 +18,7 @@ const Home: NextPage = () => (
     <Roadmap />
     <Collections />
     <Showcase />
-    <Distribution />
+    {/* <Distribution /> */}
     <Team />
     <FAQ />
   </Layout>
