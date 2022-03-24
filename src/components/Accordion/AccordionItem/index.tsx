@@ -19,7 +19,7 @@ export const AccordionItem: React.FC<Question & { opened?: boolean }> = ({
     >
       <div className='flex justify-between items-center'>
         <span
-          className={`flex items-center text-2xl font-bold ${
+          className={`flex items-center text-lg md:text-2xl font-bold mr-4 ${
             open ? "text-[#F8D47A]" : "text-[#ABABAB]"
           }`}
         >
@@ -29,7 +29,7 @@ export const AccordionItem: React.FC<Question & { opened?: boolean }> = ({
         <div id='accordion-toggler' className={open ? "open" : ""}></div>
       </div>
 
-      <p className={`answer  ${open ? "open" : ""}`}>{answer}</p>
+      <p className={`answer ${open ? "open" : ""}`}>{answer}</p>
     </div>
   );
 };
