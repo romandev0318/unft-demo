@@ -7,7 +7,7 @@ export const ShowcaseCard: React.FC<ShowcaseCardType> = ({ url, title }) => (
       <Image src={url} alt={title} className='object-cover' layout='fill' />
     </div>
 
-    <span className='flex mx-auto showcase-title bg-clip-text font-bold text-4xl text-transparent tracking-tight'>
+    <span className='block mx-auto showcase-title bg-clip-text font-bold text-4xl text-transparent tracking-tight'>
       {title}
     </span>
 
