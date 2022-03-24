@@ -7,8 +7,8 @@ type Props = {
 };
 
 export const TeamMember: React.FC<Props> = ({ member }) => (
-  <div>
-    <div className='relative h-96 mb-5'>
+  <div className="flex flex-col max-w-sm w-full mb-auto">
+    <div className='relative h-48 sm:h-96 mb-5 w-auto'>
       <Image
         src={member.avatar}
         alt={member.fullName}
