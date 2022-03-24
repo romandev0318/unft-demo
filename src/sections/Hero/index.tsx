@@ -1,44 +1,50 @@
-import { Mint } from "@/components/Mint";
 import Image from "next/image";
+import { Mint } from "@/components/Mint";
 
 export const Hero: React.FC = () => (
-  <section className='flex flex-col relative items-center text-center mx-5 2xl:mx-auto max-w-screen-2xl px-4 pt-64 pb-4 mb-40 hero-border rounded-b-[140px]'>
-    <h1 className='text-[5rem] font-extrabold leading-[6.25rem] text-[#F8D47A]'>
+  <section className='flex flex-col relative items-center text-center mx-2 md:mx-5 2xl:mx-auto max-w-screen-2xl px-2 md:px-4 pt-[120px] md:pt-64 pb-4 mb-40 hero-border rounded-b-[32px] md:rounded-b-[100px] xl:rounded-b-[140px] overflow-hidden xl:overflow-visible'>
+    <h1 className='text-[27px] leading-10 md:leading-[5rem] md:text-[3.5rem] xl:text-[5rem] font-extrabold xl:leading-[6.25rem] text-[#F8D47A] tracking-tight'>
       <span className='text-[#3383E0]'>Ukrainian NFT Collection</span>
       <br />
       of heroes this war
     </h1>
 
-    <p className='text-[1.5rem] font-medium mt-6'>
+    <p className='text-[15px] leading-5 md:text-[1.5rem] text-white/80 font-medium mt-6'>
       Anyone can support ukraine in this extremely difficult time.
     </p>
 
     <Mint />
 
-    <p className='font-semibold text-[#F8D47A] text-2xl mt-64'>
+    <p className='font-semibold text-[#F8D47A] text-xs leading-5 md:text-2xl md:leading-8 mt-14 md:mt-64'>
       100% funds will be transferred to support <br /> the Ukrainian militaryand
       the victims of this war.
     </p>
 
-    <div className='absolute top-44 right-0 left-0 h-[990px] rounded-b-[140px] overflow-hidden -z-10'>
-      <Image src='/img/hero-bg.png' alt='hero' width={1536} height={1083} />
-    </div>
-
-    <div className='absolute top-[430px] -left-20 -z-10'>
+    <div className='absolute pt-0 xl:pt-[6.5rem] 2xl:pt-0 top-[84px] w-[780px] left-1/2 -translate-x-1/2 md:w-[1534px] xl:w-full 2xl:w-[1534px] md:top-44 h-full lg:h-[970.5px] xl:h-[84.6%] 2xl:h-[970.5px] rounded-none md:rounded-b-[100px] xl:rounded-b-[140px] overflow-hidden -z-10'>
       <Image
-        src='/img/collection-left.png'
-        alt='collection left'
-        width={645 * 0.9}
-        height={784 * 0.9}
+        src='/img/hero-bg.png'
+        alt='hero'
+        width={1536}
+        height={1083}
+        className='object-cover w-[100%]'
       />
     </div>
 
-    <div className='absolute top-[450px] -right-24 -z-10'>
+    <div className='hidden xl:block w-[42%] top-[460px] 2xl:w-[580px] 2xl:h-[705px] absolute 2xl:top-[430px] -left-24 -z-10'>
+      <Image
+        src='/img/collection-left.png'
+        alt='collection left'
+        width={645}
+        height={784}
+      />
+    </div>
+
+    <div className='hidden xl:block w-[42%] top-[500px] 2xl:w-[604px] 2xl:h-[642px] absolute 2xl:top-[450px] -right-24 -z-10'>
       <Image
         src='/img/collection-right.png'
         alt='collection right'
-        width={671 * 0.9}
-        height={713 * 0.9}
+        width={671}
+        height={713}
       />
     </div>
   </section>

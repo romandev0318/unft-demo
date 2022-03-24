@@ -12,17 +12,17 @@
 
     &.small {
       &::before {
-        @apply h-[100px] md:h-[112px] opacity-100;
+        @apply h-[84px] md:h-[112px] opacity-100;
       }
 
-      @apply md:py-8 xl:px-8;
+      @apply py-6 px-4 md:py-8 xl:px-8;
     }
 
     &.open::before {
       @apply h-full opacity-100;
     }
 
-    @apply flex justify-between content-center fixed w-full 2xl:max-w-screen-2xl mx-auto top-0 left-0 right-0 py-8 px-4 md:py-16 md:px-8 xl:px-20 transition-[padding] ease-in-out delay-200 z-10;
+    @apply flex justify-between items-center content-center fixed w-full 2xl:max-w-screen-2xl mx-auto top-0 left-0 right-0 py-8 px-8 md:py-16 xl:px-20 transition-[padding] ease-in-out delay-200 z-10;
   }
 
   #toggler {
@@ -139,7 +139,7 @@
   }
 
   .btn-mint {
-    @apply btn py-5 text-white fill-white text-2xl;
+    @apply btn py-4 md:py-5 text-white fill-white text-base md:text-2xl;
 
     background: linear-gradient(95.13deg, #f5c54b 0.7%, #2e7edb 100.05%),
       linear-gradient(95.82deg, #fcd330 0.06%, #1c6bc3 70.91%, #1c6bc3 98.28%);
