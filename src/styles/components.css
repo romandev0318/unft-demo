@@ -123,6 +123,10 @@
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
 
+    span {
+      @apply z-0;
+    }
+
     &::before {
       content: "";
 

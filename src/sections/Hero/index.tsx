@@ -15,12 +15,12 @@ export const Hero: React.FC = () => (
 
     <Mint />
 
-    <p className='text-[#F8D47A] font-semibold mt-64'>
+    <p className='font-semibold text-[#F8D47A] text-2xl mt-64'>
       100% funds will be transferred to support <br /> the Ukrainian militaryand
       the victims of this war.
     </p>
 
-    <div className='absolute top-44 right-0 left-0 h-[974px] rounded-b-[140px] overflow-hidden -z-10'>
+    <div className='absolute top-44 right-0 left-0 h-[990px] rounded-b-[140px] overflow-hidden -z-10'>
       <Image src='/img/hero-bg.png' alt='hero' width={1536} height={1083} />
     </div>
 
