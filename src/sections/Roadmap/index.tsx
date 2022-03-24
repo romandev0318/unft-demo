@@ -2,12 +2,14 @@ import Image from "next/image";
 import { StarIcon } from "@/assets/svg";
 
 export const Roadmap: React.FC = () => (
-  <section id="roadmap" className='mx-auto pt-40 pb-20 max-w-7xl'>
-    <h2 className='font-bold text-4xl -mb-9'>UNFT Roadmap:</h2>
+  <section id='roadmap' className='mx-6 xl:mx-auto pt-40 pb-20 max-w-7xl'>
+    <h2 className='font-bold text-2xl md:text-4xl px-6 md:px-0 mb-9 md:-mb-9'>
+      UNFT Roadmap:
+    </h2>
 
     <ul>
       <li className='flex justify-between'>
-        <div className='flex items-center w-full'>
+        <div className='hidden items-center w-full md:flex'>
           <Image
             src='/img/roadmap-1.png'
             alt='roadmap1'
@@ -26,7 +28,7 @@ export const Roadmap: React.FC = () => (
           <div className='w-1 h-full rounded-t-sm bg-[#4A422E]/30 relative before:absolute before:top-0 before:right-0 before:left-0 before:h-28 before:bg-[#F8D47A] before:rounded-sm'></div>
         </div>
 
-        <div className='w-full pl-32 pb-20'>
+        <div className='w-full pl-0 md:pl-16 xl:pl-32 pb-20 mt-3 md:mt-0'>
           <div className='flex items-end mb-9'>
             <span className='font-bold text-5xl text-[#DADADA] tracking-tighter'>
               2022
@@ -106,7 +108,7 @@ export const Roadmap: React.FC = () => (
       </li>
 
       <li className='flex justify-between'>
-        <div className='flex mt-20 pl-32 items-center w-full order-last'>
+        <div className='hidden mt-20 md:pl-16 xl:pl-32 items-center w-full order-first md:order-last md:flex'>
           <Image
             src='/img/roadmap-2.png'
             alt='roadmap2'
@@ -127,7 +129,7 @@ export const Roadmap: React.FC = () => (
           <div className='w-1 h-full rounded-t-sm bg-[#4A422E]/30'></div>
         </div>
 
-        <div className='w-full my-auto order-first'>
+        <div className='w-full my-auto order-last pb-20 mt-36 md:mt-auto md:pb-0 md:order-first'>
           <div className='flex items-end mb-9'>
             <span className='font-bold text-5xl text-[#DADADA] tracking-tighter'>
               2022
@@ -175,7 +177,7 @@ export const Roadmap: React.FC = () => (
       </li>
 
       <li className='flex justify-between'>
-        <div className='flex mt-20 items-center w-full'>
+        <div className='hidden mt-20 items-center w-full md:flex'>
           <Image
             src='/img/roadmap-3.png'
             alt='roadmap3'
@@ -196,7 +198,7 @@ export const Roadmap: React.FC = () => (
           <div className='w-1 h-full rounded-t-sm bg-[#4A422E]/30'></div>
         </div>
 
-        <div className='w-full my-auto pl-32'>
+        <div className='w-full my-auto pl-0 md:pl-16 pb-20 mt-36 md:mt-auto md:pb-0 xl:pl-32'>
           <div className='flex items-end mb-9'>
             <span className='font-bold text-5xl text-[#DADADA] tracking-tighter'>
               2022
@@ -244,7 +246,7 @@ export const Roadmap: React.FC = () => (
       </li>
 
       <li className='flex justify-between'>
-        <div className='flex mt-20 pl-32 items-center w-full order-last'>
+        <div className='hidden mt-20 md:pl-16 xl:pl-32 items-center w-full order-first md:order-last md:flex'>
           <Image
             src='/img/roadmap-4.png'
             alt='roadmap4'
@@ -265,7 +267,7 @@ export const Roadmap: React.FC = () => (
           <div className='w-1 h-full rounded-t-sm bg-[#4A422E]/30'></div>
         </div>
 
-        <div className='w-full my-auto order-first'>
+        <div className='w-full my-auto pb-20 mt-36 md:mt-auto md:pb-0 order-last md:order-first'>
           <div className='flex items-end mb-9'>
             <span className='font-bold text-5xl text-[#DADADA] tracking-tighter'>
               2022
