@@ -15,7 +15,7 @@
         @apply h-[100px] md:h-[112px] opacity-100;
       }
 
-      @apply md:py-8;
+      @apply md:py-8 xl:px-8;
     }
 
     &.open::before {
