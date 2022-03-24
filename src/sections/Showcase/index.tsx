@@ -7,7 +7,7 @@ import { showcase } from "@/data/nfts";
 const getPageSizeByWindowWdth = (windowWidth: undefined | number) => {
   if (!windowWidth) return 0;
 
-  if (windowWidth < 768) return 3;
+  if (windowWidth < 640) return 3;
 
   if (windowWidth < 1024) return 4;
 
@@ -33,14 +33,9 @@ export const Showcase: React.FC = () => {
   }, [page, pageSize]);
 
   return (
-    <section id='showcase' className='mx-auto pt-40 pb-20 max-w-7xl'>
-      <h4 className='font-bold text-4xl mb-3'>Showcase</h4>
-
-      <div className='flex justify-between mb-16'>
-        <p className='text-base text-[#ABABAB] font-normal max-w-lg'>
-          Uh oh, we cannot find the page you are looking for. Try going to the
-          previous page or homepage or Help Center for more information.
-        </p>
+    <section id='showcase' className='mx-6 2xl:mx-auto pt-40 pb-20 max-w-7xl'>
+      <div className='flex flex-col sm:flex-row items-center justify-between mb-16 space-y-8 sm:space-y-0'>
+        <h4 className='font-bold text-4xl'>Showcase</h4>
 
         <Pagination
           page={page}
@@ -50,7 +45,7 @@ export const Showcase: React.FC = () => {
         />
       </div>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-9 gap-y-12'>
+      <div className='grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-9 gap-y-12'>
         {paginatedData.map((data, i) => (
           <ShowcaseCard key={i} {...data} />
         ))}

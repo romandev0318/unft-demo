@@ -13,7 +13,7 @@ export const Pagination: React.FC<Props> = ({
   pageSize,
   onPageChange,
 }) => (
-  <div className='flex items-center space-x-6'>
+  <div className='flex items-center space-x-6 mx-auto sm:mx-0'>
     <div className='flex space-x-2'>
       {Array.from(Array(Math.ceil(pageSize ? count / pageSize : 1)).keys()).map(
         (i) => (
