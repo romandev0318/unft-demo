@@ -20,7 +20,7 @@ export const Hero: React.FC = () => (
       the victims of this war.
     </p>
 
-    <div className='absolute pt-0 xl:pt-[6.5rem] 2xl:pt-0 top-[84px] w-[780px] left-1/2 -translate-x-1/2 md:w-[1534px] xl:w-full 2xl:w-[1534px] md:top-44 h-full lg:h-[970.5px] xl:h-[84.6%] 2xl:h-[970.5px] rounded-none md:rounded-b-[100px] xl:rounded-b-[140px] overflow-hidden -z-10'>
+    <div className='absolute pt-0 xl:pt-[6.5rem] 2xl:pt-0 top-[84px] w-[780px] left-1/2 -translate-x-1/2 md:w-[1534px] xl:w-full 2xl:w-[1534px] md:top-44 h-full lg:h-[970px] xl:h-[84.6%] 2xl:h-[970px] rounded-none md:rounded-b-[100px] xl:rounded-b-[140px] overflow-hidden -z-10'>
       <Image
         src='/img/hero-bg.png'
         alt='hero'
