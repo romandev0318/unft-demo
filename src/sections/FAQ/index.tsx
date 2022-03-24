@@ -3,7 +3,7 @@ import { Accordion } from "@/components/Accordion";
 import { questions } from "@/data/questions";
 
 export const FAQ: React.FC = () => (
-  <section className='mx-6 2xl:mx-auto my-40 max-w-7xl'>
+  <section className='mx-6 2xl:mx-auto mt-20 md:mt-40 mb-40 max-w-7xl'>
     <h4 className='font-bold text-4xl mb-3'>Frequently asked question</h4>
     <p className='text-base text-[#ABABAB] font-normal mb-16'>
       Quickly find answers to common questions

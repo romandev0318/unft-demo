@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Mint } from "@/components/Mint";
 
 export const Hero: React.FC = () => (
-  <section className='flex flex-col relative items-center text-center mx-2 md:mx-5 2xl:mx-auto max-w-screen-2xl px-2 md:px-4 pt-[120px] md:pt-64 pb-4 mb-40 hero-border rounded-b-[32px] md:rounded-b-[100px] xl:rounded-b-[140px] overflow-hidden xl:overflow-visible'>
+  <section className='flex flex-col relative items-center text-center mx-2 md:mx-5 2xl:mx-auto max-w-screen-2xl px-2 md:px-4 pt-[120px] md:pt-64 pb-4 mb-20 md:mb-40 hero-border rounded-b-[32px] md:rounded-b-[100px] xl:rounded-b-[140px] overflow-hidden xl:overflow-visible'>
     <h1 className='text-[27px] leading-10 md:leading-[5rem] md:text-[3.5rem] xl:text-[5rem] font-extrabold xl:leading-[6.25rem] text-[#F8D47A] tracking-tight'>
       <span className='text-[#3383E0]'>Ukrainian NFT Collection</span>
       <br />
