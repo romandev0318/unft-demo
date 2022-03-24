@@ -1,10 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLinkIcon, HeartIcon, ShieldIcon } from "@/assets/svg";
 import { Container } from "@/components/Container";
+import { ArrowLinkIcon, HeartIcon, ShieldIcon } from "@/assets/svg";
 
 export const About: React.FC = () => (
-  <Container className='flex items-center relative 2xl:max-w-screen-2xl 2xl:mx-auto py-24 px-36 my-40 mx-8 overflow-hidden'>
+  <Container
+    id='about'
+    className='flex items-center relative 2xl:max-w-screen-2xl 2xl:mx-auto py-24 px-36 mx-8 overflow-hidden'
+  >
     <div className='max-w-xl mr-32'>
       <h2 className='block text-4xl font-bold tracking-tight mb-32'>
         About Project

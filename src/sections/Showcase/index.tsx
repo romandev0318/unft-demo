@@ -33,7 +33,7 @@ export const Showcase: React.FC = () => {
   }, [page, pageSize]);
 
   return (
-    <section className='mx-auto my-40 max-w-7xl'>
+    <section id='showcase' className='mx-auto pt-40 pb-20 max-w-7xl'>
       <h4 className='font-bold text-4xl mb-3'>Showcase</h4>
 
       <div className='flex justify-between mb-16'>

@@ -1,10 +1,9 @@
 import Image from "next/image";
 import { Container } from "@/components/Container";
-import { TridentIcon } from "@/assets/svg";
 import { DistributionItem } from "@/components/DistributionItem";
 
 export const Distribution: React.FC = () => (
-  <Container className='flex flex-col items-center relative 2xl:max-w-screen-2xl 2xl:mx-auto py-24 px-36 my-40 mx-8 overflow-hidden'>
+  <Container className='flex flex-col items-center relative 2xl:max-w-screen-2xl 2xl:mx-auto py-24 px-36 mx-8 overflow-hidden'>
     <h3 className='block w-full text-left text-4xl font-bold tracking-tight mb-24 z-[1]'>
       Distribution of funds
     </h3>

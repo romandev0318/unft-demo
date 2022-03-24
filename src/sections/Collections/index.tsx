@@ -3,7 +3,10 @@ import { Container } from "@/components/Container";
 import { TridentIcon } from "@/assets/svg";
 
 export const Collections: React.FC = () => (
-  <Container className='flex items-center relative 2xl:max-w-screen-2xl 2xl:mx-auto py-24 px-36 my-40 mx-8 overflow-hidden'>
+  <Container
+    id='collection'
+    className='flex items-center relative 2xl:max-w-screen-2xl 2xl:mx-auto py-24 px-36 mx-8 overflow-hidden'
+  >
     <div className='max-w-xl mr-32'>
       <h2 className='block text-4xl font-bold tracking-tight mb-3'>
         Our Collections

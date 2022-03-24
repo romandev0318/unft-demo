@@ -2,7 +2,7 @@ import { TeamMember } from "@/components/TeamMember";
 import { team } from "@/data/team";
 
 export const Team: React.FC = () => (
-  <section className='mx-auto my-40 max-w-7xl'>
+  <section className='mx-auto pt-40 pb-20 max-w-7xl'>
     <h4 className='font-bold text-4xl mb-3'>Our Team</h4>
     <p className='text-base text-[#ABABAB] font-normal mb-16'>
       Ordinary people who love their country
