@@ -4,7 +4,7 @@ import { btnLinks } from "@/data/links";
 
 export const Contacts: React.FC = () => (
   <section className='text-center'>
-    <strong className='block mb-4 md:mb-8 text-2xl sm:text-4xl leading-10 font-bold'>
+    <strong className='block mb-4 md:mb-8 text-3xl sm:text-4xl leading-10 font-bold'>
       Got a question <br className='block sm:hidden' /> or proposal?
     </strong>
     <p className='flex flex-col md:block text-[#ABABAB] text-[14px] mb-16'>
