@@ -22,7 +22,7 @@
       @apply h-full opacity-100;
     }
 
-    @apply flex justify-between content-center fixed w-full 2xl:max-w-screen-2xl mx-auto top-0 left-0 right-0 py-8 px-4 md:py-16 md:px-8 transition-[padding] ease-in-out delay-200 z-10;
+    @apply flex justify-between content-center fixed w-full 2xl:max-w-screen-2xl mx-auto top-0 left-0 right-0 py-8 px-4 md:py-16 md:px-8 xl:px-20 transition-[padding] ease-in-out delay-200 z-10;
   }
 
   #toggler {
