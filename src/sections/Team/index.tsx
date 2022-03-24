@@ -3,8 +3,8 @@ import { team } from "@/data/team";
 
 export const Team: React.FC = () => (
   <section className='mx-6 2xl:mx-auto pt-40 pb-20 max-w-7xl'>
-    <h4 className='font-bold text-4xl mb-3'>Our Team</h4>
-    <p className='text-base text-[#ABABAB] font-normal mb-16'>
+    <h4 className='font-bold text-4xl px-6 sm:px-0 mb-3'>Our Team</h4>
+    <p className='text-base text-[#ABABAB] font-normal px-6 sm:px-0 mb-16'>
       Ordinary people who love their country
     </p>
 
