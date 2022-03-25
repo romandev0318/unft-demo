@@ -1,7 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import Link from "next/link";
 import { Links } from "@/components/Links";
 import { links } from "@/data/links";
 
@@ -38,11 +38,13 @@ export const Header: React.FC = () => {
       >
         <div>
           <Link href='/'>
-            <a>
-              <img
-                className='h-9 lg:h-12'
+            <a className='block w-[109px] lg:w-[145px] h-9 lg:h-12'>
+              <Image
                 src='/img/UNFTLogo.png'
                 alt='unft logo'
+                className='h-full w-full'
+                width={145}
+                height={48}
               />
             </a>
           </Link>

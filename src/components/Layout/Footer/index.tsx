@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import Link from "next/link";
 import { Links } from "@/components/Links";
 import { links } from "@/data/links";
@@ -8,11 +8,13 @@ export const Footer: React.FC = () => (
     <div className='flex flex-col space-y-16 md:space-y-20 px-4 md:px-8 py-16 2xl:max-w-screen-2xl mx-auto'>
       <div className='flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between items-center'>
         <Link href='/'>
-          <a>
-            <img
-              className='h-12 lg:h-16'
+          <a className='block w-[145px] lg:w-[193px] h-12 lg:h-16'>
+            <Image
               src='/img/UNFTLogo.png'
               alt='unft logo'
+              className='h-full w-full'
+              width={193}
+              height={64}
             />
           </a>
         </Link>
@@ -21,14 +23,7 @@ export const Footer: React.FC = () => (
           <span className='font-bold text-[#A9A9A9]'>
             TRIP smart contract address:
           </span>
-          <span
-            className='text-white font-normal'
-            // onClick={() => {
-            //   navigator.clipboard.writeText(
-            //     "0x692f6bbea88da58268cce0fc92897e416eccc03c"
-            //   );
-            // }}
-          >
+          <span className='text-white font-normal'>
             0x692f6bbea88da58268cce0fc92897e416eccc03c
           </span>
         </p>

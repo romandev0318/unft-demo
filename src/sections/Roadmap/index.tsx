@@ -2,7 +2,10 @@ import Image from "next/image";
 import { StarIcon } from "@/assets/svg";
 
 export const Roadmap: React.FC = () => (
-  <section id='roadmap' className='mx-6 xl:mx-auto pt-24 md:pt-40 pb-20 max-w-7xl'>
+  <section
+    id='roadmap'
+    className='mx-6 xl:mx-auto pt-24 md:pt-40 pb-20 max-w-7xl'
+  >
     <h2 className='font-bold text-2xl md:text-4xl px-6 md:px-0 mb-9 md:-mb-9'>
       UNFT Roadmap:
     </h2>

@@ -1,22 +1,22 @@
 import { Element, elementTypeTitles } from "types";
 
 export const showcase = [
-  { url: "/img/showcase/showcase-1.png", title: "Hero Cat" },
-  { url: "/img/showcase/showcase-2.png", title: "Hero Dog" },
-  { url: "/img/showcase/showcase-3.png", title: "Hero Hot-Dog" },
-  { url: "/img/showcase/showcase-4.png", title: "Ukranian Samurai" },
-  { url: "/img/showcase/showcase-5.png", title: "Hawk" },
-  { url: "/img/showcase/showcase-6.png", title: "Stealth backdor" },
-  { url: "/img/showcase/showcase-7.png", title: "Hero Cat" },
-  { url: "/img/showcase/showcase-8.png", title: "Warship" },
-  { url: "/img/showcase/showcase-9.png", title: "Zelenskiy" },
-  { url: "/img/showcase/showcase-10.png", title: "Forest" },
-  { url: "/img/showcase/showcase-11.png", title: "Example 1" },
-  { url: "/img/showcase/showcase-12.png", title: "Example 2" },
-  { url: "/img/showcase/showcase-13.png", title: "Example 3" },
-  { url: "/img/showcase/showcase-14.png", title: "Example 4" },
-  { url: "/img/showcase/showcase-15.png", title: "Example 5" },
-  { url: "/img/showcase/showcase-16.png", title: "Example 6" },
+  { url: "/img/showcase/showcase-1.png", title: "UA-NFT #1" },
+  { url: "/img/showcase/showcase-2.png", title: "UA-NFT #2" },
+  { url: "/img/showcase/showcase-3.png", title: "UA-NFT #3" },
+  { url: "/img/showcase/showcase-4.png", title: "UA-NFT #4" },
+  { url: "/img/showcase/showcase-5.png", title: "UA-NFT #5" },
+  { url: "/img/showcase/showcase-6.png", title: "UA-NFT #6" },
+  { url: "/img/showcase/showcase-7.png", title: "UA-NFT #7" },
+  { url: "/img/showcase/showcase-8.png", title: "UA-NFT #8" },
+  { url: "/img/showcase/showcase-9.png", title: "UA-NFT #9" },
+  { url: "/img/showcase/showcase-10.png", title: "UA-NFT #10" },
+  { url: "/img/showcase/showcase-11.png", title: "UA-NFT #11" },
+  { url: "/img/showcase/showcase-12.png", title: "UA-NFT #12" },
+  { url: "/img/showcase/showcase-13.png", title: "UA-NFT #13" },
+  { url: "/img/showcase/showcase-14.png", title: "UA-NFT #14" },
+  { url: "/img/showcase/showcase-15.png", title: "UA-NFT #15" },
+  { url: "/img/showcase/showcase-16.png", title: "UA-NFT #16" },
 ];
 
 export const elementsByType: {
