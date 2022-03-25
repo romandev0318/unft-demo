@@ -1,4 +1,4 @@
-import { Question } from "types";
+import { Question } from "src/types";
 import { AccordionItem } from "./AccordionItem";
 
 type Props = {

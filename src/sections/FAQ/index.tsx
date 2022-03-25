@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Accordion } from "@/components/Accordion";
 import { questions } from "@/data/questions";
+import { FAQImage } from "@/assets/img";
 
 export const FAQ: React.FC = () => (
   <section className='mx-6 2xl:mx-auto mt-20 md:mt-40 mb-40 max-w-7xl'>
@@ -15,7 +16,7 @@ export const FAQ: React.FC = () => (
       </div>
 
       <div>
-        <Image src='/img/FAQ.png' alt='faq' width={607} height={778} />
+        <Image src={FAQImage} alt='faq' placeholder='blur' />
       </div>
     </div>
   </section>

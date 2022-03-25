@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { ArrowLinkIcon, HeartIcon, ShieldIcon } from "@/assets/svg";
+import { aboutImage } from "@/assets/img";
 
 export const About: React.FC = () => (
   <Container
@@ -40,6 +41,6 @@ export const About: React.FC = () => (
       </Link>
     </div>
 
-    <Image src='/img/about.png' alt='card' width={756} height={804} />
+    <Image src={aboutImage} alt='card' placeholder='blur' />
   </Container>
 );

@@ -1,4 +1,9 @@
 import Image from "next/image";
+import {
+  heroBgImage,
+  collectionLeftImage,
+  collectionRightImage,
+} from "@/assets/img";
 import { Mint } from "@/components/Mint";
 
 export const Hero: React.FC = () => (
@@ -22,29 +27,31 @@ export const Hero: React.FC = () => (
 
     <div className='absolute pt-0 xl:pt-[6.5rem] 2xl:pt-0 top-[84px] w-[780px] left-1/2 -translate-x-1/2 md:w-[1534px] xl:w-full 2xl:w-[1534px] md:top-44 h-full lg:h-[970px] xl:h-[84.6%] 2xl:h-[970px] rounded-none md:rounded-b-[100px] xl:rounded-b-[140px] overflow-hidden -z-10'>
       <Image
-        src='/img/hero-bg.png'
+        src={heroBgImage}
         alt='hero'
         width={1536}
         height={1083}
         className='object-cover w-[100%]'
+        priority
+        placeholder='blur'
       />
     </div>
 
     <div className='hidden xl:block w-[42%] top-[460px] 2xl:w-[580px] 2xl:h-[705px] absolute 2xl:top-[430px] -left-24 -z-10'>
       <Image
-        src='/img/collection-left.png'
+        src={collectionLeftImage}
         alt='collection left'
-        width={645}
-        height={784}
+        priority
+        placeholder='blur'
       />
     </div>
 
     <div className='hidden xl:block w-[42%] top-[500px] 2xl:w-[604px] 2xl:h-[642px] absolute 2xl:top-[450px] -right-24 -z-10'>
       <Image
-        src='/img/collection-right.png'
+        src={collectionRightImage}
         alt='collection right'
-        width={671}
-        height={713}
+        priority
+        placeholder='blur'
       />
     </div>
   </section>

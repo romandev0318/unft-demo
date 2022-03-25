@@ -1,5 +1,11 @@
 import Image from "next/image";
 import { StarIcon } from "@/assets/svg";
+import {
+  roadmap1Image,
+  roadmap2Image,
+  roadmap3Image,
+  roadmap4Image,
+} from "@/assets/img";
 
 export const Roadmap: React.FC = () => (
   <section
@@ -14,10 +20,11 @@ export const Roadmap: React.FC = () => (
       <li className='flex justify-between'>
         <div className='hidden items-center w-full md:flex'>
           <Image
-            src='/img/roadmap-1.png'
+            src={roadmap1Image}
             alt='roadmap1'
             width={302}
             height={450}
+            placeholder='blur'
           />
         </div>
 
@@ -113,10 +120,11 @@ export const Roadmap: React.FC = () => (
       <li className='flex justify-between'>
         <div className='hidden mt-20 md:pl-16 xl:pl-32 items-center w-full order-first md:order-last md:flex'>
           <Image
-            src='/img/roadmap-2.png'
+            src={roadmap2Image}
             alt='roadmap2'
             width={302}
             height={450}
+            placeholder='blur'
           />
         </div>
 
@@ -182,10 +190,11 @@ export const Roadmap: React.FC = () => (
       <li className='flex justify-between'>
         <div className='hidden mt-20 items-center w-full md:flex'>
           <Image
-            src='/img/roadmap-3.png'
+            src={roadmap3Image}
             alt='roadmap3'
             width={302}
             height={450}
+            placeholder='blur'
           />
         </div>
 
@@ -251,10 +260,11 @@ export const Roadmap: React.FC = () => (
       <li className='flex justify-between'>
         <div className='hidden mt-20 md:pl-16 xl:pl-32 items-center w-full order-first md:order-last md:flex'>
           <Image
-            src='/img/roadmap-4.png'
+            src={roadmap4Image}
             alt='roadmap4'
             width={302}
             height={450}
+            placeholder='blur'
           />
         </div>
 

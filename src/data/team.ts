@@ -1,4 +1,4 @@
-import { Member } from "types";
+import { Member } from "src/types";
 
 export const team: Member[] = [
   {

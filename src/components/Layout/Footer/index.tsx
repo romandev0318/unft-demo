@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { UNFTLogoImage } from "@/assets/img";
 import { Links } from "@/components/Links";
 import { links } from "@/data/links";
 
@@ -9,13 +10,7 @@ export const Footer: React.FC = () => (
       <div className='flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between items-center'>
         <Link href='/'>
           <a className='block w-[145px] lg:w-[193px] h-12 lg:h-16'>
-            <Image
-              src='/img/UNFTLogo.png'
-              alt='unft logo'
-              className='h-full w-full'
-              width={193}
-              height={64}
-            />
+            <Image src={UNFTLogoImage} alt='unft logo' />
           </a>
         </Link>
 

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Container } from "@/components/Container";
 import { TridentIcon } from "@/assets/svg";
+import { collectionImage } from "@/assets/img";
 
 export const Collections: React.FC = () => (
   <Container id='collection' className='px-6 lg:px-16 2xl:px-36'>
@@ -36,12 +37,7 @@ export const Collections: React.FC = () => (
     </div>
 
     <div className='relative scale-[1.2] -translate-x-3 translate-y-12 sm:scale-110 sm:translate-y-20 sm:translate-x-0 md:scale-none md:translate-y-20 xl:absolute xl:max-w-[55%] xl:top-1/2 xl:right-0 xl:-translate-y-[40%]'>
-      <Image
-        src='/img/collection.png'
-        alt='collection'
-        width={822}
-        height={719}
-      />
+      <Image src={collectionImage} alt='collection' />
     </div>
   </Container>
 );

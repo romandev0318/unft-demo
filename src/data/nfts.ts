@@ -1,4 +1,4 @@
-import { Element, elementTypeTitles } from "types";
+import { Element, elementTypeTitles } from "src/types";
 
 export const showcase = [
   { url: "/img/showcase/showcase-1.png", title: "UA-NFT #1" },
