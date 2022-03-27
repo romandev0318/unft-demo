@@ -11,16 +11,16 @@ export const Hero: React.FC = () => (
     <h1 className='text-[27px] leading-10 md:leading-[5rem] md:text-[3.5rem] xl:text-[5rem] font-extrabold xl:leading-[6.25rem] text-[#F8D47A] tracking-tight'>
       <span className='text-[#3383E0]'>Ukrainian NFT Collection</span>
       <br />
-      of heroes this war
+      The heroes of the war
     </h1>
 
     <p className='text-[15px] leading-5 md:text-[1.5rem] text-white/80 font-medium mt-6'>
-      Anyone can support ukraine in this extremely difficult time.
+      Anyone can support Ukraine at this extremely difficult time
     </p>
 
     <Mint />
 
-    <p className='font-semibold text-[#F8D47A] text-xs leading-5 md:text-2xl md:leading-8 mt-14 md:mt-64'>
+    <p className='font-semibold text-[#F8D47A] text-xs leading-5 md:text-2xl md:leading-8 mt-14 md:mt-64 opacity-0'>
       100% funds will be transferred to support <br /> the Ukrainian militaryand
       the victims of this war.
     </p>
