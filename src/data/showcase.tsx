@@ -195,4 +195,28 @@ export const showcase: ShowcaseCardType[] = [
     ),
     title: "UA-NFT #16",
   },
+  {
+    image: (
+      <Image
+        src={ShowcaseImages.showcase17Image}
+        alt='UA-NFT #17'
+        className='object-cover'
+        layout='fill'
+        placeholder='blur'
+      />
+    ),
+    title: "UA-NFT #17",
+  },
+  {
+    image: (
+      <Image
+        src={ShowcaseImages.showcase18Image}
+        alt='UA-NFT #18'
+        className='object-cover'
+        layout='fill'
+        placeholder='blur'
+      />
+    ),
+    title: "UA-NFT #18",
+  },
 ];

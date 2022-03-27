@@ -14,6 +14,8 @@ import showcase13Image from "@/public/img/showcase/showcase-13.png";
 import showcase14Image from "@/public/img/showcase/showcase-14.png";
 import showcase15Image from "@/public/img/showcase/showcase-15.png";
 import showcase16Image from "@/public/img/showcase/showcase-16.png";
+import showcase17Image from "@/public/img/showcase/showcase-17.png";
+import showcase18Image from "@/public/img/showcase/showcase-18.png";
 
 const ShowcaseImages = {
   showcase1Image,
@@ -32,6 +34,8 @@ const ShowcaseImages = {
   showcase14Image,
   showcase15Image,
   showcase16Image,
+  showcase17Image,
+  showcase18Image,
 };
 
 export default ShowcaseImages;
