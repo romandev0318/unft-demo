@@ -4,29 +4,31 @@ export interface LinkType {
 }
 
 export interface ShowcaseCardType {
-  url: string;
+  image: JSX.Element;
   title: string;
 }
 
-export type RarityType =
-  | "Common"
-  | "Rare"
-  | "Super Rare"
-  | "Epic"
-  | "Legendary";
+export const rarities = [
+  "common",
+  "rare",
+  "superRare",
+  "epic",
+  "legendary",
+] as const;
 
-export const elementTypeTitles = {
-  location: "Location",
-  clothes: "Clothes",
-  band: "Band",
-  beard: "Beard",
-  accessoryFace: "Accessory Face",
-  accessoryBody: "Accessory Body",
-  headdress: "Headdress",
-};
+export type RarityType = typeof rarities[number];
+
+export type ElementType =
+  | "location"
+  | "clothes"
+  | "band"
+  | "beard"
+  | "accessoryFace"
+  | "accessoryBody"
+  | "headdress";
 
 export interface Element {
-  url: string;
+  image: JSX.Element;
   name: string;
   rarity: RarityType;
 }

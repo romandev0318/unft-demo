@@ -1,10 +1,13 @@
 import type { NextPage } from "next";
 
 import { Layout } from "@/components/Layout";
+import { RarityHero } from "@/sections/RarityHero";
+import { ElementList } from "@/sections/ElementList";
 
 const Rarity: NextPage = () => (
   <Layout>
-    <h1>Rarity</h1>
+    <RarityHero />
+    <ElementList />
   </Layout>
 );
 

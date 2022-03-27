@@ -175,12 +175,204 @@
     z-index: 1;
   }
 
-  .showcase-title {
+  .gradient-text {
     background: linear-gradient(
       96.39deg,
       #1c1c1c -9.54%,
       #ffffff 49.6%,
       #303030 105.26%
     );
+  }
+
+  .rarity {
+    @apply font-semibold text-sm rounded-xl w-auto mx-auto px-6 py-3 mb-3 -translate-y-1/2 z-[8];
+
+    &::before {
+      content: "";
+
+      @apply absolute p-[2.23px] top-0 left-0 right-0 bottom-0 rounded-xl bg-clip-content -z-10;
+    }
+
+    &.common {
+      background: linear-gradient(
+          0deg,
+          rgba(142, 142, 142, 0.2),
+          rgba(142, 142, 142, 0.2)
+        ),
+        radial-gradient(
+          122.53% 72.31% at 9.88% 131.08%,
+          #ffffff -20%,
+          rgba(255, 255, 255, 0) 100%
+        ),
+        radial-gradient(
+          82.72% 80.43% at -8.95% -58.14%,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 100%
+        ),
+        radial-gradient(
+          163.27% 64.37% at 121.3% 37.79%,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+
+      &::before {
+        @apply bg-[#1C1C1C];
+      }
+
+      @apply text-[#B7B3B3];
+    }
+
+    &.rare {
+      background: linear-gradient(
+          0deg,
+          rgba(51, 224, 131, 0.2),
+          rgba(51, 224, 131, 0.2)
+        ),
+        radial-gradient(
+          122.53% 72.31% at 9.88% 131.08%,
+          #ffffff -20%,
+          rgba(255, 255, 255, 0) 100%
+        ),
+        radial-gradient(
+          82.72% 80.43% at -8.95% -58.14%,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 100%
+        ),
+        radial-gradient(
+          163.27% 64.37% at 121.3% 37.79%,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+
+      &::before {
+        @apply bg-[#0A2D1B];
+      }
+
+      @apply text-[#33E083];
+    }
+
+    &.superRare {
+      background: linear-gradient(
+          0deg,
+          rgba(51, 131, 224, 0.2),
+          rgba(51, 131, 224, 0.2)
+        ),
+        radial-gradient(
+          122.53% 72.31% at 9.88% 131.08%,
+          #ffffff -20%,
+          rgba(255, 255, 255, 0) 100%
+        ),
+        radial-gradient(
+          82.72% 80.43% at -8.95% -58.14%,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 100%
+        ),
+        radial-gradient(
+          163.27% 64.37% at 121.3% 37.79%,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+
+      &::before {
+        @apply bg-[#091A2D];
+      }
+
+      @apply text-[#3383E0];
+    }
+
+    &.epic {
+      background: linear-gradient(
+          0deg,
+          rgba(117, 51, 224, 0.2),
+          rgba(117, 51, 224, 0.2)
+        ),
+        radial-gradient(
+          122.53% 72.31% at 9.88% 131.08%,
+          #ffffff -20%,
+          rgba(255, 255, 255, 0) 100%
+        ),
+        radial-gradient(
+          82.72% 80.43% at -8.95% -58.14%,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 100%
+        ),
+        radial-gradient(
+          163.27% 64.37% at 121.3% 37.79%,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+
+      &::before {
+        @apply bg-[#170A2D];
+      }
+
+      @apply text-[#7F3AF0];
+    }
+
+    &.legendary {
+      background: linear-gradient(
+          0deg,
+          rgba(248, 212, 122, 0.2),
+          rgba(248, 212, 122, 0.2)
+        ),
+        radial-gradient(
+          122.53% 72.31% at 9.88% 131.08%,
+          #ffffff -20%,
+          rgba(255, 255, 255, 0) 100%
+        ),
+        radial-gradient(
+          82.72% 80.43% at -8.95% -58.14%,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 100%
+        ),
+        radial-gradient(
+          163.27% 64.37% at 121.3% 37.79%,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+
+      &::before {
+        @apply bg-[#322A18];
+      }
+
+      @apply text-[#F8D47A];
+    }
+  }
+
+  .option {
+    &:hover,
+    &.selected {
+      @apply bg-[#222327] text-[#FCFCFD];
+    }
+
+    &.null:hover,
+    &.selected.null {
+      @apply bg-[#222327] text-[#FCFCFD];
+    }
+
+    &.common:hover,
+    &.selected.common {
+      @apply bg-[#1C1C1C] text-[#B7B3B3];
+    }
+
+    &.rare:hover,
+    &.selected.rare {
+      @apply bg-[#0A2D1B] text-[#33E083];
+    }
+
+    &.superRare:hover,
+    &.selected.superRare {
+      @apply bg-[#091A2D] text-[#3383E0];
+    }
+
+    &.epic:hover,
+    &.selected.epic {
+      @apply bg-[#170A2D] text-[#7F3AF0];
+    }
+
+    &.legendary:hover,
+    &.selected.legendary {
+      @apply bg-[#322A18] text-[#F8D47A];
+    }
   }
 }
