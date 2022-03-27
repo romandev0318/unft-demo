@@ -123,7 +123,10 @@ export const ElementList: React.FC = () => {
 
           <div className='grid place-items-center grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-6 sm:gap-x-6 sm:gap-y-12'>
             {paginatedData.map((data, i) => (
-              <ElementCard key={i} {...data} />
+              <ElementCard
+                key={"" + selectedType + selectedRarity + page + i}
+                {...data}
+              />
             ))}
           </div>
         </div>

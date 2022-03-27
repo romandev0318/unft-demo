@@ -61,8 +61,6 @@ import TurquoiseBeretHat from "@/public/img/elements/headdress/Turquoise beret h
 import OfficerGreenCap from "@/public/img/elements/headdress/Officer green cap.png";
 import GreenBeretHat from "@/public/img/elements/headdress/Green beret hat.png.png";
 import MilitaryCap from "@/public/img/elements/headdress/Military cap.png";
-import Pot from "@/public/img/elements/headdress/Pot.png";
-import PatrioticPot from "@/public/img/elements/headdress/Patriotic pot.png";
 import HeaddressMedicGreen from "@/public/img/elements/headdress/Headdress medic green.png";
 import Cap from "@/public/img/elements/headdress/Cap.png";
 import HairCapMedicGreen from "@/public/img/elements/headdress/hair cap medic green.png";
@@ -137,8 +135,6 @@ const ElementsImages = {
   OfficerGreenCap,
   GreenBeretHat,
   MilitaryCap,
-  Pot,
-  PatrioticPot,
   HeaddressMedicGreen,
   Cap,
   HairCapMedicGreen,

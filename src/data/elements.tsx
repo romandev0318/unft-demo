@@ -14,6 +14,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Administration",
@@ -27,6 +28,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Kiev",
@@ -40,6 +42,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Lighthouse in fire",
@@ -53,6 +56,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Bomb shelter",
@@ -66,6 +70,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Destroyed hospital",
@@ -79,6 +84,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Private house",
@@ -92,6 +98,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Scyscraper in fire",
@@ -105,6 +112,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Motherland",
@@ -118,6 +126,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "War-chaos",
@@ -133,6 +142,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Green medical t-shirt",
@@ -146,6 +156,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Civil sport jacket",
@@ -159,6 +170,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Tactical jacket",
@@ -172,6 +184,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Hard military jacket",
@@ -185,6 +198,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Civil red vest",
@@ -198,6 +212,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Blue medical sweater",
@@ -211,6 +226,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Civil jacket",
@@ -224,6 +240,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Civil cardigan",
@@ -237,6 +254,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Rescuer jacket",
@@ -250,6 +268,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Police jacket",
@@ -263,6 +282,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Blue medical t-shirt",
@@ -276,6 +296,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Civil sweater",
@@ -289,6 +310,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Millitary jacket",
@@ -302,6 +324,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Officer green jacket",
@@ -315,6 +338,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Green medical sweater",
@@ -328,6 +352,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Civil orange vest",
@@ -341,6 +366,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Offecer blue jacket",
@@ -354,6 +380,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Pilot jacket",
@@ -369,6 +396,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Blue Band",
@@ -382,6 +410,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Wound Band",
@@ -395,6 +424,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Yellow Band",
@@ -410,6 +440,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Unshaved",
@@ -423,6 +454,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Moustache",
@@ -436,6 +468,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Beard",
@@ -451,6 +484,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Right Bandage",
@@ -464,6 +498,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Left Bloody Bandage",
@@ -477,6 +512,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Medical Mask",
@@ -490,6 +526,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Dirty Medical Mask",
@@ -503,6 +540,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Right Bloody Bandage",
@@ -516,6 +554,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Left Bandage",
@@ -529,6 +568,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Black Golden Glasses",
@@ -542,6 +582,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Green Glasses",
@@ -555,6 +596,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Black Glasses",
@@ -568,6 +610,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Golden Glasses",
@@ -581,6 +624,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Orrange Glasses",
@@ -594,6 +638,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Glasses",
@@ -609,6 +654,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Bulletproof Vest",
@@ -622,6 +668,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Technical Vest",
@@ -635,6 +682,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Belt 2",
@@ -648,6 +696,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Belt 1",
@@ -661,6 +710,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Bulletproof Vest Black",
@@ -676,6 +726,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Headdress Medic Blue",
@@ -689,6 +740,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Pilot Helmet",
@@ -702,6 +754,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Hat",
@@ -715,6 +768,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Night Vision Camouflage Helmet",
@@ -728,6 +782,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Officer Blue Cap",
@@ -741,6 +796,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Tank Helmet",
@@ -754,6 +810,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Lifeguard Helmet",
@@ -767,6 +824,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Police Cap",
@@ -780,6 +838,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Police Helmet",
@@ -793,6 +852,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Turquoise Beret Hat",
@@ -806,6 +866,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Officer Green Cap",
@@ -819,6 +880,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Green Beret Hat",
@@ -832,35 +894,10 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Millitary Cap",
-      rarity: "rare",
-    },
-    {
-      image: (
-        <Image
-          src={ElementsImages.Pot}
-          alt='Pot'
-          objectFit='cover'
-          layout='fill'
-          placeholder='blur'
-        />
-      ),
-      name: "Pot",
-      rarity: "common",
-    },
-    {
-      image: (
-        <Image
-          src={ElementsImages.PatrioticPot}
-          alt='PatrioticPot'
-          objectFit='cover'
-          layout='fill'
-          placeholder='blur'
-        />
-      ),
-      name: "Patriotic Pot",
       rarity: "rare",
     },
     {
@@ -871,6 +908,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Headdress Medic Green",
@@ -884,6 +922,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Cap",
@@ -897,6 +936,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Hair Cap Medic Green",
@@ -910,6 +950,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Helmet",
@@ -923,6 +964,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Camouflage Helmet",
@@ -936,6 +978,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Red Beret Hat",
@@ -949,6 +992,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Tactical Cap",
@@ -962,6 +1006,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Hair Cap Medic Blue",
@@ -975,6 +1020,7 @@ export const elementsByType: {
           objectFit='cover'
           layout='fill'
           placeholder='blur'
+          quality={20}
         />
       ),
       name: "Blue Beret Hat",
