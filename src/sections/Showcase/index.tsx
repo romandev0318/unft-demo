@@ -50,7 +50,7 @@ export const Showcase: React.FC = () => {
 
       <div className='grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-9 gap-y-12'>
         {paginatedData.map((data, i) => (
-          <ShowcaseCard key={i} {...data} />
+          <ShowcaseCard key={"" + page + i} {...data} />
         ))}
       </div>
     </section>
