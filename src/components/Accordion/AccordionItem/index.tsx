@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Question } from "src/types";
+import { Question } from "types";
 
 export const AccordionItem: React.FC<Question & { opened?: boolean }> = ({
   question,

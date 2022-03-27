@@ -1,6 +1,6 @@
 import ElementsImages from "@/assets/elements";
 import Image from "next/image";
-import { Element, ElementType } from "src/types";
+import { Element, ElementType } from "types";
 
 export const elementsByType: {
   [type in ElementType]: Element[];

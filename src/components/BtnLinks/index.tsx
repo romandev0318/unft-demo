@@ -1,4 +1,4 @@
-import { LinkType } from "src/types";
+import { LinkType } from "types";
 
 type Props = {
   links: LinkType[];

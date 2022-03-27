@@ -1,6 +1,6 @@
 import { TeamElonaImg } from "@/assets/team";
 import Image from "next/image";
-import { Member } from "src/types";
+import { Member } from "types";
 
 export const team: Member[] = [
   {

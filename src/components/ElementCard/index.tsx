@@ -1,5 +1,5 @@
 import { camelCaseToTitleCase } from "@/utils/camelCaseToTitleCase";
-import { Element } from "src/types";
+import { Element } from "types";
 
 export const ElementCard: React.FC<Element> = ({ image, name, rarity }) => (
   <div className='flex flex-col max-w-sm w-full mb-auto lg:max-w-none relative p-1 sm:p-2 text-center radial-border rounded-[12px] before:rounded-[13px] sm:rounded-[28px] sm:before:rounded-[29px] before:-z-10'>
