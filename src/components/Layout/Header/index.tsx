@@ -52,7 +52,7 @@ export const Header: React.FC = () => {
         ></div>
 
         <nav
-          className={`flex flex-col space-y-4 text-[#8A8A8A] text-center font-medium text-2xl fixed top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 md:space-y-0 md:flex md:flex-row md:text-base md:opacity-100 md:space-x-4 lg:space-x-9 md:pointer-events-auto md:absolute transition ease-out delay-200 z-10 ${
+          className={`flex flex-col space-y-[2.875rem] text-[#EDEDED] md:text-[#8A8A8A] font-medium text-2xl leading-6 md:leading-8 fixed px-12 md:px-0 w-full md:w-auto top-32 md:top-1/2 md:-translate-y-1/2 left-1/2 -translate-x-1/2 md:space-y-0 md:flex md:flex-row md:text-base md:opacity-100 md:space-x-4 lg:space-x-9 md:pointer-events-auto md:absolute transition ease-out delay-200 z-10 ${
             open
               ? "opacity-100 pointer-events-auto"
               : "opacity-0 pointer-events-none"
@@ -88,7 +88,7 @@ export const Header: React.FC = () => {
         <div
           className={`flex items-center space-x-4 lg:space-x-6 fixed bottom-8 left-1/2 -translate-x-1/2 md:relative md:bottom-0 md:left-auto md:-translate-x-0 md:opacity-100 md:pointer-events-auto transition ease-out delay-200 ${
             open
-              ? "opacity-100 pointer-events-auto"
+              ? "opacity-60 pointer-events-auto"
               : "opacity-0 pointer-events-none"
           }`}
         >
