@@ -10,9 +10,14 @@ import { Roadmap } from "@/sections/Roadmap";
 import { Showcase } from "@/sections/Showcase";
 import { Team } from "@/sections/Team";
 import { FAQ } from "@/sections/FAQ";
+import Head from "next/head";
 
 const Home: NextPage = () => (
   <Layout>
+    <Head>
+      <title>UA NTF</title>
+    </Head>
+
     <Hero />
     <About />
     <Roadmap />
