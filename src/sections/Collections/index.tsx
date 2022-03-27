@@ -6,9 +6,9 @@ import { collectionImage } from "@/assets/img";
 export const Collections: React.FC = () => (
   <Container id='collection' className='px-6 lg:px-16 2xl:px-36'>
     <div className='max-w-xl xl:mr-32'>
-      <h2 className='block text-[28px] sm:text-4xl font-bold tracking-tight mb-3'>
+      <h3 className='block text-[28px] sm:text-4xl font-bold tracking-tight mb-3'>
         Our Collections
-      </h2>
+      </h3>
 
       <p className='text-[#ABABAB] text-sm sm:text-base font-normal mb-16 xl:mb-32'>
         Uh oh, we cannot find the page you are looking for. Try going to the

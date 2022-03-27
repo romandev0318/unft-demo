@@ -34,6 +34,7 @@ export const Pagination: React.FC<Props> = ({
         onClick={onPageChange(page - 1)}
         disabled={page === 1}
       >
+        <span className='sr-only'>back</span>
         <ArrowIcon className='rotate-180' />
       </button>
 
@@ -43,6 +44,7 @@ export const Pagination: React.FC<Props> = ({
         onClick={onPageChange(page + 1)}
         disabled={page === (count ? Math.ceil(count / pageSize) : 1)}
       >
+        <span className='sr-only'>next</span>
         <ArrowIcon />
       </button>
     </div>
