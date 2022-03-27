@@ -34,7 +34,7 @@ export interface Element {
 }
 
 export interface Member {
-  avatar: JSX.Element;
+  avatar: string; // url
   fullName: string;
   title: string;
   links: LinkType[];

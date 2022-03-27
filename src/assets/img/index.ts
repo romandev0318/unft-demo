@@ -1,16 +1,16 @@
-import UNFTLogoImage from "./UNFTLogo.png";
-import heroBgImage from "./hero-bg.png";
-import rarityHeroBgImage from "./rarity-hero-bg.png";
-import collectionLeftImage from "./collection-left.png";
-import collectionRightImage from "./collection-right.png";
-import aboutImage from "./about.png";
-import roadmap1Image from "./roadmap-4.png";
-import roadmap2Image from "./roadmap-2.png";
-import roadmap3Image from "./roadmap-3.png";
-import roadmap4Image from "./roadmap-1.png";
-import FAQImage from "./FAQ.png";
-import contactsBgImage from "./contacts-bg.png";
-import collectionImage from "./collection.png";
+import UNFTLogoImage from "@/public/img/UNFTLogo.png";
+import heroBgImage from "@/public/img/hero-bg.png";
+import rarityHeroBgImage from "@/public/img/rarity-hero-bg.png";
+import collectionLeftImage from "@/public/img/collection-left.png";
+import collectionRightImage from "@/public/img/collection-right.png";
+import aboutImage from "@/public/img/about.png";
+import roadmap1Image from "@/public/img/roadmap-4.png";
+import roadmap2Image from "@/public/img/roadmap-2.png";
+import roadmap3Image from "@/public/img/roadmap-3.png";
+import roadmap4Image from "@/public/img/roadmap-1.png";
+import FAQImage from "@/public/img/FAQ.png";
+import contactsBgImage from "@/public/img/contacts-bg.png";
+import collectionImage from "@/public/img/collection.png";
 
 export {
   UNFTLogoImage,

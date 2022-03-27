@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Member } from "src/types";
 import { Links } from "@/components/Links";
 
@@ -6,8 +7,15 @@ type Props = {
 };
 
 export const TeamMember: React.FC<Props> = ({ member }) => (
-  <div className='flex flex-col max-w-sm w-full mb-auto'>
-    <div className='relative h-48 sm:h-96 mb-5 w-auto'>{member.avatar}</div>
+  <div className="flex flex-col max-w-sm w-full mb-auto">
+    <div className='relative h-48 sm:h-96 mb-5 w-auto'>
+      <Image
+        src={member.avatar}
+        alt={member.fullName}
+        className='rounded-3xl object-cover'
+        layout='fill'
+      />
+    </div>
 
     <span className='block font-bold text-2xl tracking-tight mb-2'>
       {member.fullName}
