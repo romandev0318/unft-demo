@@ -9,12 +9,6 @@ import { camelCaseToTitleCase } from "@/utils/camelCaseToTitleCase";
 import { SelectMenu } from "@/components/SelectMenu";
 
 export const ElementList: React.FC = () => {
-  const windowWidth = useWindowWidth();
-  const pageSize = useMemo(
-    () => getPageSizeByWindowWdth(windowWidth),
-    [windowWidth]
-  );
-
   const [page, setPage] = useState(1);
   const [selectedType, setSelectedType] = useState(
     Object.keys(elementsByType)[0] as ElementType
@@ -32,15 +26,14 @@ export const ElementList: React.FC = () => {
   };
 
   const paginatedData = useMemo(() => {
-    if (!pageSize) return [];
-    const firstPageIndex = (page - 1) * pageSize;
-    const lastPageIndex = firstPageIndex + pageSize;
+    const firstPageIndex = (page - 1) * 6;
+    const lastPageIndex = firstPageIndex + 6;
     return elementsByType[selectedType]
       .filter((element) =>
         selectedRarity ? element.rarity === selectedRarity : true
       )
       .slice(firstPageIndex, lastPageIndex);
-  }, [selectedType, selectedRarity, page, pageSize]);
+  }, [selectedType, selectedRarity, page]);
 
   return (
     <section
@@ -125,12 +118,12 @@ export const ElementList: React.FC = () => {
                   selectedRarity ? element.rarity === selectedRarity : true
                 ).length
               }
-              pageSize={pageSize}
+              pageSize={6}
               onPageChange={handlePageChange}
             />
           </div>
 
-          <div className='grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12'>
+          <div className='grid place-items-center grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-6 sm:gap-x-6 sm:gap-y-12'>
             {paginatedData.map((data, i) => (
               <ElementCard key={i} {...data} />
             ))}

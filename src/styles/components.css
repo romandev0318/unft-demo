@@ -185,12 +185,12 @@
   }
 
   .rarity {
-    @apply font-semibold text-sm rounded-xl w-auto mx-auto px-6 py-3 mb-3 -translate-y-1/2 z-[8];
+    @apply font-semibold text-[8px] sm:text-sm rounded-[5px] sm:rounded-xl w-auto mx-auto px-[11px] py-[6px] sm:px-6 sm:py-3 mb-3 -translate-y-1/2 z-[8];
 
     &::before {
       content: "";
 
-      @apply absolute p-[2.23px] top-0 left-0 right-0 bottom-0 rounded-xl bg-clip-content -z-10;
+      @apply absolute p-[1px] sm:p-[2.23px] top-0 left-0 right-0 bottom-0 rounded-[5px] sm:rounded-xl bg-clip-content -z-10;
     }
 
     &.common {
