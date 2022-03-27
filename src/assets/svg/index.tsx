@@ -4,6 +4,7 @@ import ArrowLinkIcon from "@/public/svg/arrow-link.svg";
 import StarIcon from "@/public/svg/star.svg";
 import TridentIcon from "@/public/svg/trident.svg";
 import ArrowIcon from "@/public/svg/arrow.svg";
+import ArrowDropdownIcon from "@/public/svg/arrow-dropdown.svg";
 import WalletIcon from "@/public/svg/wallet.svg";
 
 // Socials
@@ -30,5 +31,6 @@ export {
   StarIcon,
   TridentIcon,
   ArrowIcon,
+  ArrowDropdownIcon,
   WalletIcon,
 };
