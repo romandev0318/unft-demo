@@ -1,8 +1,19 @@
+import Image from "next/image";
+import TeamImages from "@/assets/team";
 import { Member } from "src/types";
 
 export const team: Member[] = [
   {
-    avatar: "/img/team/elona.png",
+    avatar: (
+      <Image
+        src={TeamImages.MemberElonaImage}
+        alt='member'
+        objectFit='cover'
+        className='rounded-3xl'
+        layout='fill'
+        placeholder='blur'
+      />
+    ),
     fullName: "Elona Musk",
     title: "UI / UX Designer",
     links: [
@@ -25,7 +36,16 @@ export const team: Member[] = [
     ],
   },
   {
-    avatar: "/img/team/elona.png",
+    avatar: (
+      <Image
+        src={TeamImages.MemberElonaImage}
+        alt='member'
+        objectFit='cover'
+        className='rounded-3xl'
+        layout='fill'
+        placeholder='blur'
+      />
+    ),
     fullName: "Nadiia Kravchenko",
     title: "Team manager",
     links: [
@@ -48,7 +68,16 @@ export const team: Member[] = [
     ],
   },
   {
-    avatar: "/img/team/elona.png",
+    avatar: (
+      <Image
+        src={TeamImages.MemberElonaImage}
+        alt='member'
+        objectFit='cover'
+        className='rounded-3xl'
+        layout='fill'
+        placeholder='blur'
+      />
+    ),
     fullName: "Erin Felis",
     title: "Artist",
     links: [
@@ -71,7 +100,16 @@ export const team: Member[] = [
     ],
   },
   {
-    avatar: "/img/team/elona.png",
+    avatar: (
+      <Image
+        src={TeamImages.MemberElonaImage}
+        alt='member'
+        objectFit='cover'
+        className='rounded-3xl'
+        layout='fill'
+        placeholder='blur'
+      />
+    ),
     fullName: "Victoria Abramovich",
     title: "Staking Advisor & Director Of Implementation",
     links: [
@@ -94,7 +132,16 @@ export const team: Member[] = [
     ],
   },
   {
-    avatar: "/img/team/elona.png",
+    avatar: (
+      <Image
+        src={TeamImages.MemberElonaImage}
+        alt='member'
+        objectFit='cover'
+        className='rounded-3xl'
+        layout='fill'
+        placeholder='blur'
+      />
+    ),
     fullName: "Ehor Kadurov",
     title: "Senior Advisor",
     links: [
@@ -117,7 +164,16 @@ export const team: Member[] = [
     ],
   },
   {
-    avatar: "/img/team/elona.png",
+    avatar: (
+      <Image
+        src={TeamImages.MemberElonaImage}
+        alt='member'
+        objectFit='cover'
+        className='rounded-3xl'
+        layout='fill'
+        placeholder='blur'
+      />
+    ),
     fullName: "Tatyana Rubka",
     title: "Ui / Ux Designer",
     links: [
@@ -140,7 +196,16 @@ export const team: Member[] = [
     ],
   },
   {
-    avatar: "/img/team/elona.png",
+    avatar: (
+      <Image
+        src={TeamImages.MemberElonaImage}
+        alt='member'
+        objectFit='cover'
+        className='rounded-3xl'
+        layout='fill'
+        placeholder='blur'
+      />
+    ),
     fullName: "Dmitrii Kolbasa",
     title: "Staking Advisor & Director Of Implementation",
     links: [
@@ -163,7 +228,16 @@ export const team: Member[] = [
     ],
   },
   {
-    avatar: "/img/team/elona.png",
+    avatar: (
+      <Image
+        src={TeamImages.MemberElonaImage}
+        alt='member'
+        objectFit='cover'
+        className='rounded-3xl'
+        layout='fill'
+        placeholder='blur'
+      />
+    ),
     fullName: "Serhei Lomachenko",
     title: "Senior Advisor",
     links: [
@@ -186,7 +260,16 @@ export const team: Member[] = [
     ],
   },
   {
-    avatar: "/img/team/elona.png",
+    avatar: (
+      <Image
+        src={TeamImages.MemberElonaImage}
+        alt='member'
+        objectFit='cover'
+        className='rounded-3xl'
+        layout='fill'
+        placeholder='blur'
+      />
+    ),
     fullName: "Dmitrii Hevrev",
     title: "NFT Specialist",
     links: [
@@ -209,7 +292,16 @@ export const team: Member[] = [
     ],
   },
   {
-    avatar: "/img/team/elona.png",
+    avatar: (
+      <Image
+        src={TeamImages.MemberElonaImage}
+        alt='member'
+        objectFit='cover'
+        className='rounded-3xl'
+        layout='fill'
+        placeholder='blur'
+      />
+    ),
     fullName: "Elona Musk",
     title: "UI / UX Designer",
     links: [
@@ -232,7 +324,16 @@ export const team: Member[] = [
     ],
   },
   {
-    avatar: "/img/team/elona.png",
+    avatar: (
+      <Image
+        src={TeamImages.MemberElonaImage}
+        alt='member'
+        objectFit='cover'
+        className='rounded-3xl'
+        layout='fill'
+        placeholder='blur'
+      />
+    ),
     fullName: "Elona Musk",
     title: "UI / UX Designer",
     links: [

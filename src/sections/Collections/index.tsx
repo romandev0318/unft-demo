@@ -37,7 +37,7 @@ export const Collections: React.FC = () => (
     </div>
 
     <div className='relative scale-[1.2] -translate-x-3 translate-y-12 sm:scale-110 sm:translate-y-20 sm:translate-x-0 md:scale-none md:translate-y-20 xl:absolute xl:max-w-[55%] xl:top-1/2 xl:right-0 xl:-translate-y-[40%]'>
-      <Image src={collectionImage} alt='collection' />
+      <Image src={collectionImage} alt='collection' placeholder='blur' />
     </div>
   </Container>
 );

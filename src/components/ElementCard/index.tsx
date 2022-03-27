@@ -9,7 +9,7 @@ export const ElementCard: React.FC<Element> = ({ image, name, rarity }) => (
 
     <div className={`rarity ${rarity}`}>{camelCaseToTitleCase(rarity)}</div>
 
-    <span className='block mb-[10px] mx-auto gradient-text bg-clip-text font-bold text-sm sm:text-4xl text-transparent tracking-tight'>
+    <span className='block mb-[10px] sm:mb-10 mx-auto gradient-text bg-clip-text font-bold text-sm sm:text-4xl text-transparent tracking-tight'>
       {name}
     </span>
 

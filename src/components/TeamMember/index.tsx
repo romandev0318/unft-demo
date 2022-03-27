@@ -9,12 +9,7 @@ type Props = {
 export const TeamMember: React.FC<Props> = ({ member }) => (
   <div className="flex flex-col max-w-sm w-full mb-auto">
     <div className='relative h-48 sm:h-96 mb-5 w-auto'>
-      <Image
-        src={member.avatar}
-        alt={member.fullName}
-        className='rounded-3xl object-cover'
-        layout='fill'
-      />
+      {member.avatar}
     </div>
 
     <span className='block font-bold text-2xl tracking-tight mb-2'>
