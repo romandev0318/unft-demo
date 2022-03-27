@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ShowcaseImages from "@/assets/showcase";
-import { ShowcaseCardType } from "types";
+import { ShowcaseCardType } from "src/types";
 
 export const showcase: ShowcaseCardType[] = [
   {

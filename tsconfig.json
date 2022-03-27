@@ -2,14 +2,14 @@
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "@/assets/*": ["assets/*"],
-      "@/components/*": ["components/*"],
-      "@/sections/*": ["sections/*"],
-      "@/data/*": ["data/*"],
-      "@/styles/*": ["styles/*"],
-      "@/utils/*": ["utils/*"]
+      "@/assets/*": ["src/assets/*"],
+      "@/components/*": ["src/components/*"],
+      "@/sections/*": ["src/sections/*"],
+      "@/data/*": ["src/data/*"],
+      "@/styles/*": ["src/styles/*"],
+      "@/utils/*": ["src/utils/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,

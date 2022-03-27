@@ -1,4 +1,4 @@
-import { Member } from "types";
+import { Member } from "src/types";
 import { Links } from "@/components/Links";
 
 type Props = {

@@ -4,7 +4,7 @@ import { useWindowWidth } from "@/utils/useWindowSize";
 import { elementsByType } from "@/data/elements";
 import { getPageSizeByWindowWdth } from "@/utils/getPageSizeByWindowWdth";
 import { ElementCard } from "@/components/ElementCard";
-import { ElementType, rarities, RarityType } from "types";
+import { ElementType, rarities, RarityType } from "src/types";
 import { camelCaseToTitleCase } from "@/utils/camelCaseToTitleCase";
 import { SelectMenu } from "@/components/SelectMenu";
 
