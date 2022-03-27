@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { Pagination } from "@/components/Pagination";
 import { ShowcaseCard } from "@/components/ShowcaseCard";
 import { useWindowWidth } from "@/utils/useWindowSize";
-import { showcase } from "@/data/nfts";
+import { showcase } from "@/data/showcase";
 
 const getPageSizeByWindowWdth = (windowWidth: undefined | number) => {
   if (!windowWidth) return 0;
