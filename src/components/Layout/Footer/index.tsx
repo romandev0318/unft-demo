@@ -25,25 +25,19 @@ export const Footer: React.FC = () => (
       </div>
 
       <div className='flex flex-col space-y-12 space-y-reverse md:space-y-0 md:flex-row justify-between items-center text-sm sm:text-base'>
-        <span className='text-white order-last md:order-first opacity-60'>
-          Copyright © 2022 UNFT. All right reserve
+        <span className='text-white text-sm order-last md:order-first opacity-60'>
+          UNFT 2022. All right reserve
         </span>
 
         <div className='flex items-center space-x-6 order-first md:order-none transition ease-out delay-200'>
           <Links links={links} className='opacity-60' />
         </div>
 
-        <div className='flex flex-col md:flex-row items-center text-white space-x-0 md:space-x-9 space-y-4 md:space-y-0'>
-          <Link href='privacy-policy'>
-            <a className='opacity-60 hover:text-[#F8D47A] hover:opacity-100 transition ease-out delay-200'>
-              Privacy Policy
-            </a>
-          </Link>
-          <Link href='terms'>
-            <a className='opacity-60 hover:text-[#F8D47A] hover:opacity-100 transition ease-out delay-200'>
-              Terms &#38; Conditions
-            </a>
-          </Link>
+        <div className='space-x-1'>
+          <span className='text-white text-sm opacity-60'>In partnership with</span>
+          <span className='text-[#F8D47A] text-sm font-semibold transition ease-out delay-200'>
+            CGT GROUP
+          </span>
         </div>
       </div>
     </div>
