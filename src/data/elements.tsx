@@ -313,7 +313,7 @@ export const elementsByType: {
           quality={20}
         />
       ),
-      name: "Millitary jacket",
+      name: "Military jacket",
       rarity: "epic",
     },
     {
@@ -897,7 +897,7 @@ export const elementsByType: {
           quality={20}
         />
       ),
-      name: "Millitary Cap",
+      name: "Military Cap",
       rarity: "rare",
     },
     {
