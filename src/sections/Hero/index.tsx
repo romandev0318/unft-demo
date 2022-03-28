@@ -20,7 +20,7 @@ export const Hero: React.FC = () => (
 
     <Mint />
 
-    <p className='font-semibold text-[#F8D47A] text-xs leading-5 md:text-2xl md:leading-8 mt-14 md:mt-64 opacity-0'>
+    <p className='font-semibold text-[#F8D47A] text-xs leading-5 md:text-2xl md:leading-8 mt-14 md:mt-64 opacity-0 pointer-events-none'>
       100% funds will be transferred to support <br /> the Ukrainian militaryand
       the victims of this war.
     </p>
