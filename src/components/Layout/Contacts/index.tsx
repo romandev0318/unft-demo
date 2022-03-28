@@ -11,7 +11,7 @@ export const Contacts: React.FC = () => (
     <p className='flex flex-col md:block text-[#ABABAB] text-[14px] mb-16'>
       Send an email to{" "}
       <span className='w-full md:w-auto text-[18px] text-[#F8D47A] font-semibold'>
-        unft@support.com
+        support@ua-nft.io
       </span>{" "}
       or find us on social media using the links below
     </p>
