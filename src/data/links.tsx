@@ -2,15 +2,15 @@ import { LinkType } from "src/types";
 
 export const links: LinkType[] = [
   {
-    url: "https://discord.com/",
+    url: "https://discord.gg/vbUTSFaN",
     label: "discord",
   },
   {
-    url: "https://instagram.com/",
+    url: "https://instagram.com/ua__nft",
     label: "instagram",
   },
   {
-    url: "https://twitter.com/",
+    url: "https://twitter.com/ua__nft",
     label: "twitter",
   },
   {
@@ -21,19 +21,19 @@ export const links: LinkType[] = [
 
 export const btnLinks: LinkType[] = [
   {
-    url: "mailto:unft@support.com",
+    url: "mailto:support@ua-nft.io",
     label: "Email",
   },
   {
-    url: "https://discord.com/",
+    url: "https://discord.gg/vbUTSFaN",
     label: "Discord",
   },
   {
-    url: "https://t.me/",
+    url: "https://t.me/ua_nft_tg",
     label: "Telegram",
   },
   {
-    url: "https://twitter.com/",
+    url: "https://twitter.com/ua__nft",
     label: "Twitter",
   },
 ];
