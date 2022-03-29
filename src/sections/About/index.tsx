@@ -18,19 +18,21 @@ export const About: React.FC = () => (
         <HeartIcon className='mr-4' /> Why we do it?
       </span>
       <p className='text-[#ABABAB] text-base font-normal leading-relaxed mb-9'>
-        Uh oh, we cannot find the page you are looking for. Try going to the
-        previous page or homepage or Help Center for more information. Uh oh, we
-        cannot find the page you are looking for.
+        War. There is a new reality ahead and we want to maximize all the
+        opportunities for migrants, their children and build a successful new
+        generation. Act and create to help others. Our project is like a
+        transition to a new reality. And its the way to save the future for
+        children and refugees
       </p>
 
       <span className='flex items-center text-2xl text-[#F8D47A] font-bold mb-3'>
         <ShieldIcon className='mr-4' /> What is our target?
       </span>
       <p className='text-[#ABABAB] text-base font-normal leading-relaxed mb-9'>
-        Uh oh, we cannot find the page you are looking for. Try going to the
-        previous page or homepage or Help Center for more information. Uh oh, we
-        cannot find the page you are looking for. Try going to the previous page
-        or homepage or Help Center for more information.
+        Our goal is to create a new generation hub. Education for children
+        affected by the war, education for children from orphanages, the
+        opportunity to learn new professions with international experts and the
+        possibility of employment in the global market
       </p>
 
       <Link href='#collection'>

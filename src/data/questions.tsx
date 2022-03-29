@@ -2,40 +2,25 @@ import { Question } from "src/types";
 
 export const questions: Question[] = [
   {
-    question: "How does the free trial work?",
-    answer: (
-      <>
-        Launched in 2017, DataHawk is the 1st software platform that provides
-        powerful enterprise-grade analytics intuitively and at scale, at an
-        affordable price. Today, we are the leading SEO and Product Data
-        analytics solution in the market.
-        <br />
-        <br />
-        We&apos;re a team of 40+ experienced software developers, retail, and
-        marketing professionals based in Paris, France. We recently raised $7
-        Million USD Series A in Equity funding round to become the global leader
-        in Multi-Channel eCommerce Analytics and Optimization.
-      </>
-    ),
+    question: "Who we are?",
+    answer:
+      "UA-NFT is 15000 uniquely generated cards of all participants in the war in Ukraine. Our goal is to create a new generation hub. Education for children by the affected war, education for children from orphanages, the opportunity to learn new professions with international experts and the possibility of employment in the global market",
   },
   {
-    question: "When do I get charged with a paid plan?",
-    answer:
-      "Launched in 2017, DataHawk is the 1st software platform that provides powerful enterprise-grade analytics intuitively and at scale, at an affordable price. Today, we are the leading SEO and Product Data analytics solution in the market.",
+    question: "What is the Supply?",
+    answer: "The total supply of Tier 1 UA-NFT is 15 000 unique nfts.",
   },
   {
-    question: "How secure are payments?",
+    question: "Mint price?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellat magni modi pariatur placeat eos tempora tempore sequi. Harum recusandae autem, cum illum doloribus est eos cupiditate deleniti vero ex!",
+      "Each not will cost 0.015 ETH to mint. This price is subject to change with the fluctuating price of ETH.",
   },
   {
-    question: "What payment methods are available?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellat magni modi pariatur placeat eos tempora tempore sequi. Harum recusandae autem, cum illum doloribus est eos cupiditate deleniti vero ex!",
+    question: "How many NFTs will I be able to mint during the public sale?",
+    answer: "1 per transaction.",
   },
   {
-    question: "Do you have a yearly plan with a discount?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellat magni modi pariatur placeat eos tempora tempore sequi. Harum recusandae autem, cum illum doloribus est eos cupiditate deleniti vero ex!",
+    question: "What are the royalties going to be?",
+    answer: "Secondary royalties will be 3.5%.",
   },
 ];

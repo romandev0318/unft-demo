@@ -12,9 +12,5 @@ export const ElementCard: React.FC<Element> = ({ image, name, rarity }) => (
     <span className='block mb-[10px] sm:mb-10 mx-auto gradient-text bg-clip-text font-bold text-sm sm:text-4xl text-transparent tracking-tight'>
       {name}
     </span>
-
-    <span className='font-bold text-[#474747] text-[8px] sm:text-base tracking-tighter pb-4 sm:pb-5'>
-      UA NFT Valanter collection © 2022
-    </span>
   </div>
 );

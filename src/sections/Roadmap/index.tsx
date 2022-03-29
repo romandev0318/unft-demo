@@ -54,8 +54,7 @@ export const Roadmap: React.FC = () => (
                 <StarIcon className='opacity-30' />
               </div>
               <span className='text-[#ABABAB] text-lg font-semibold leading-relaxed'>
-                Creation of the new $TRIP Contract (Binance Smart Chain (BSC)
-                with a max supply of 5 billion $TRIP)
+                Smart contract development
               </span>
             </li>
             <li className='flex mb-4'>
@@ -63,7 +62,7 @@ export const Roadmap: React.FC = () => (
                 <StarIcon className='opacity-30' />
               </div>
               <span className='text-[#ABABAB] text-lg font-semibold leading-relaxed'>
-                Full audit &#x26; KYC to ensure security &#x26; transparency
+                Launch of the first NFT collection
               </span>
             </li>
             <li className='mb-4'>
@@ -72,7 +71,7 @@ export const Roadmap: React.FC = () => (
                   <StarIcon />
                 </div>
                 <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
-                  Migration from ERC20 to BSC
+                  Mint
                 </span>
               </div>
               <p className='text-sm text-[#ABABAB] max-w-[15rem] leading-loose ml-11'>
@@ -80,38 +79,6 @@ export const Roadmap: React.FC = () => (
                 Launch community swap from ERC-BSchain Open BSC deposit and
                 withdrawal Re-launch trading pairs
               </p>
-            </li>
-            <li className='flex mb-4'>
-              <div className='p-1 mr-4 mb-auto'>
-                <StarIcon />
-              </div>
-              <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
-                MigLaunch initial marketing campaign
-              </span>
-            </li>
-            <li className='flex mb-4'>
-              <div className='p-1 mr-4 mb-auto'>
-                <StarIcon />
-              </div>
-              <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
-                Launch private sale
-              </span>
-            </li>
-            <li className='flex mb-4'>
-              <div className='p-1 mr-4 mb-auto'>
-                <StarIcon />
-              </div>
-              <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
-                Launch Initial Liquidity Offering (ILO)
-              </span>
-            </li>
-            <li className='flex mb-4'>
-              <div className='p-1 mr-4 mb-auto'>
-                <StarIcon />
-              </div>
-              <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
-                Add Decentralised Exchange (DEX) liquidity
-              </span>
             </li>
           </ul>
         </div>
@@ -156,7 +123,7 @@ export const Roadmap: React.FC = () => (
                 <StarIcon />
               </div>
               <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
-                Launch private sale
+                Assistance to refugees
               </span>
             </li>
             <li className='flex mb-4'>
@@ -164,7 +131,7 @@ export const Roadmap: React.FC = () => (
                 <StarIcon />
               </div>
               <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
-                Launch Initial Liquidity Offering (ILO)
+                Organization of simple boarding schools for children
               </span>
             </li>
             <li className='flex mb-4'>
@@ -172,7 +139,7 @@ export const Roadmap: React.FC = () => (
                 <StarIcon />
               </div>
               <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
-                Add Decentralised Exchange (DEX) liquidity
+                Professional psychological assistance
               </span>
             </li>
             <li className='flex mb-4'>
@@ -180,7 +147,8 @@ export const Roadmap: React.FC = () => (
                 <StarIcon />
               </div>
               <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
-                Add Decentralised Exchange (DEX) liquidity
+                Preparation of training courses and selection of experts for the
+                preparation of chains of courses
               </span>
             </li>
           </ul>
@@ -226,31 +194,7 @@ export const Roadmap: React.FC = () => (
                 <StarIcon />
               </div>
               <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
-                Launch private sale
-              </span>
-            </li>
-            <li className='flex mb-4'>
-              <div className='p-1 mr-4 mb-auto'>
-                <StarIcon />
-              </div>
-              <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
-                Launch Initial Liquidity Offering (ILO)
-              </span>
-            </li>
-            <li className='flex mb-4'>
-              <div className='p-1 mr-4 mb-auto'>
-                <StarIcon />
-              </div>
-              <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
-                Add Decentralised Exchange (DEX) liquidity
-              </span>
-            </li>
-            <li className='flex mb-4'>
-              <div className='p-1 mr-4 mb-auto'>
-                <StarIcon />
-              </div>
-              <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
-                Add Decentralised Exchange (DEX) liquidity
+                Launch of the second NFT collection
               </span>
             </li>
           </ul>
@@ -296,7 +240,7 @@ export const Roadmap: React.FC = () => (
                 <StarIcon />
               </div>
               <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
-                Launch private sale
+                Development of humanitarian assistance
               </span>
             </li>
             <li className='flex mb-4'>
@@ -304,7 +248,7 @@ export const Roadmap: React.FC = () => (
                 <StarIcon />
               </div>
               <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
-                Launch Initial Liquidity Offering (ILO)
+                Medical consultations
               </span>
             </li>
             <li className='flex mb-4'>
@@ -312,7 +256,7 @@ export const Roadmap: React.FC = () => (
                 <StarIcon />
               </div>
               <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
-                Add Decentralised Exchange (DEX) liquidity
+                Organization of training for adult migrants
               </span>
             </li>
             <li className='flex mb-4'>
@@ -320,7 +264,15 @@ export const Roadmap: React.FC = () => (
                 <StarIcon />
               </div>
               <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
-                Add Decentralised Exchange (DEX) liquidity
+                Full audit &amp; KYC to ensure security &amp; transparency
+              </span>
+            </li>
+            <li className='flex mb-4'>
+              <div className='p-1 mr-4 mb-auto'>
+                <StarIcon />
+              </div>
+              <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
+                Building a system of education in orphanages
               </span>
             </li>
           </ul>

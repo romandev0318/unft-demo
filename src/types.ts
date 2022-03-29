@@ -42,5 +42,5 @@ export interface Member {
 
 export interface Question {
   question: string;
-  answer: string | JSX.Element;
+  answer: string;
 }

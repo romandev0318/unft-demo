@@ -14,8 +14,8 @@ export const links: LinkType[] = [
     label: "twitter",
   },
   {
-    url: "https://medium.com/",
-    label: "medium",
+    url: "https://t.me/ua_nft_tg",
+    label: "telegram",
   },
 ];
 

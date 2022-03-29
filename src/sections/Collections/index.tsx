@@ -20,8 +20,8 @@ export const Collections: React.FC = () => (
           <TridentIcon className='mr-2' /> Collection #1
         </span>
         <p className='text-[#BEA875] font-normal text-xs sm:text-base'>
-          Uh oh, we cannot find the page you are looking for. Try going to the
-          previous page or homepage or Help Center for more information.
+          Each NFT hero is a hero of Ukraine, each civilian who follows his
+          country
         </p>
       </div>
 
@@ -30,8 +30,9 @@ export const Collections: React.FC = () => (
           Collection #2
         </span>
         <p className='text-[#ABABAB] font-normal text-xs sm:text-base'>
-          Uh oh, we cannot find the page you are looking for. Try going to the
-          previous page or homepage or Help Center for more information.
+          Personal heroic stories that have become known to the whole world.
+          Celebrities who support Ukraine, young projects and participants in
+          the war
         </p>
       </div>
     </div>
