@@ -7,7 +7,13 @@ type Props = {
 export const BtnLinks: React.FC<Props> = ({ links }) => (
   <>
     {links.map((link, i) => (
-      <a className='btn w-36' href={link.url} key={i}>
+      <a
+        className='btn w-36'
+        href={link.url}
+        target='_blank'
+        rel='noopener noreferrer nofollow'
+        key={i}
+      >
         <span>{link.label}</span>
       </a>
     ))}
