@@ -58,6 +58,6 @@ export const Meta: React.FC = () => (
     <meta name='apple-mobile-web-app-title' content='UA NFT' />
     <meta name='application-name' content='UA NFT' />
     <meta name='msapplication-TileColor' content='#f8d47a' />
-    <meta name='theme-color' content='#f8d47a'></meta>
+    <meta name='theme-color' content='#0a0b0f'></meta>
   </Head>
 );
