@@ -4,7 +4,6 @@ import showcase3Image from "@/public/img/showcase/showcase-3.png";
 import showcase4Image from "@/public/img/showcase/showcase-4.png";
 import showcase5Image from "@/public/img/showcase/showcase-5.png";
 import showcase6Image from "@/public/img/showcase/showcase-6.png";
-import showcase7Image from "@/public/img/showcase/showcase-7.png";
 import showcase8Image from "@/public/img/showcase/showcase-8.png";
 import showcase9Image from "@/public/img/showcase/showcase-9.png";
 import showcase10Image from "@/public/img/showcase/showcase-10.png";
@@ -24,7 +23,6 @@ const ShowcaseImages = {
   showcase4Image,
   showcase5Image,
   showcase6Image,
-  showcase7Image,
   showcase8Image,
   showcase9Image,
   showcase10Image,

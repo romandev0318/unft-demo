@@ -10,7 +10,7 @@ export const showcase: ShowcaseCardType[] = [
         alt='UA-NFT #1'
         className='object-cover'
         layout='fill'
-        quality={20}
+        quality={30}
         placeholder='blur'
       />
     ),
@@ -23,7 +23,7 @@ export const showcase: ShowcaseCardType[] = [
         alt='UA-NFT #2'
         className='object-cover'
         layout='fill'
-        quality={20}
+        quality={30}
         placeholder='blur'
       />
     ),
@@ -36,7 +36,7 @@ export const showcase: ShowcaseCardType[] = [
         alt='UA-NFT #3'
         className='object-cover'
         layout='fill'
-        quality={20}
+        quality={30}
         placeholder='blur'
       />
     ),
@@ -49,7 +49,7 @@ export const showcase: ShowcaseCardType[] = [
         alt='UA-NFT #4'
         className='object-cover'
         layout='fill'
-        quality={20}
+        quality={30}
         placeholder='blur'
       />
     ),
@@ -62,7 +62,7 @@ export const showcase: ShowcaseCardType[] = [
         alt='UA-NFT #5'
         className='object-cover'
         layout='fill'
-        quality={20}
+        quality={30}
         placeholder='blur'
       />
     ),
@@ -75,7 +75,7 @@ export const showcase: ShowcaseCardType[] = [
         alt='UA-NFT #6'
         className='object-cover'
         layout='fill'
-        quality={20}
+        quality={30}
         placeholder='blur'
       />
     ),
@@ -84,24 +84,11 @@ export const showcase: ShowcaseCardType[] = [
   {
     image: (
       <Image
-        src={ShowcaseImages.showcase7Image}
-        alt='UA-NFT #7'
-        className='object-cover'
-        layout='fill'
-        quality={20}
-        placeholder='blur'
-      />
-    ),
-    title: "UA-NFT #7",
-  },
-  {
-    image: (
-      <Image
         src={ShowcaseImages.showcase8Image}
         alt='UA-NFT #8'
         className='object-cover'
         layout='fill'
-        quality={20}
+        quality={30}
         placeholder='blur'
       />
     ),
@@ -114,7 +101,7 @@ export const showcase: ShowcaseCardType[] = [
         alt='UA-NFT #9'
         className='object-cover'
         layout='fill'
-        quality={20}
+        quality={30}
         placeholder='blur'
       />
     ),
@@ -127,7 +114,7 @@ export const showcase: ShowcaseCardType[] = [
         alt='UA-NFT #10'
         className='object-cover'
         layout='fill'
-        quality={20}
+        quality={30}
         placeholder='blur'
       />
     ),
@@ -140,7 +127,7 @@ export const showcase: ShowcaseCardType[] = [
         alt='UA-NFT #11'
         className='object-cover'
         layout='fill'
-        quality={20}
+        quality={30}
         placeholder='blur'
       />
     ),
@@ -153,7 +140,7 @@ export const showcase: ShowcaseCardType[] = [
         alt='UA-NFT #12'
         className='object-cover'
         layout='fill'
-        quality={20}
+        quality={30}
         placeholder='blur'
       />
     ),
@@ -166,7 +153,7 @@ export const showcase: ShowcaseCardType[] = [
         alt='UA-NFT #13'
         className='object-cover'
         layout='fill'
-        quality={20}
+        quality={30}
         placeholder='blur'
       />
     ),
@@ -179,7 +166,7 @@ export const showcase: ShowcaseCardType[] = [
         alt='UA-NFT #14'
         className='object-cover'
         layout='fill'
-        quality={20}
+        quality={30}
         placeholder='blur'
       />
     ),
@@ -192,7 +179,7 @@ export const showcase: ShowcaseCardType[] = [
         alt='UA-NFT #15'
         className='object-cover'
         layout='fill'
-        quality={20}
+        quality={30}
         placeholder='blur'
       />
     ),
@@ -205,7 +192,7 @@ export const showcase: ShowcaseCardType[] = [
         alt='UA-NFT #16'
         className='object-cover'
         layout='fill'
-        quality={20}
+        quality={30}
         placeholder='blur'
       />
     ),
@@ -218,7 +205,7 @@ export const showcase: ShowcaseCardType[] = [
         alt='UA-NFT #17'
         className='object-cover'
         layout='fill'
-        quality={20}
+        quality={30}
         placeholder='blur'
       />
     ),
@@ -231,7 +218,7 @@ export const showcase: ShowcaseCardType[] = [
         alt='UA-NFT #18'
         className='object-cover'
         layout='fill'
-        quality={20}
+        quality={30}
         placeholder='blur'
       />
     ),
