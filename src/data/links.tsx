@@ -14,8 +14,8 @@ export const links: LinkType[] = [
     label: "twitter",
   },
   {
-    url: "https://t.me/ua_nft_tg",
-    label: "telegram",
+    url: "https://opensea.io/",
+    label: "opensea",
   },
 ];
 

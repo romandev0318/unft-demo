@@ -14,6 +14,7 @@ import InstagramIcon from "@/public/svg/instagram.svg";
 import MediumIcon from "@/public/svg/medium.svg";
 import TelegramIcon from "@/public/svg/telegram.svg";
 import TwitterIcon from "@/public/svg/twitter.svg";
+import OpenseaIcon from "@/public/svg/opensea.svg";
 
 export const socialIcons: { [x: string]: JSX.Element } = {
   discord: <DiscordIcon />,
@@ -22,6 +23,7 @@ export const socialIcons: { [x: string]: JSX.Element } = {
   medium: <MediumIcon />,
   telegram: <TelegramIcon />,
   twitter: <TwitterIcon />,
+  opensea: <OpenseaIcon />,
 };
 
 export {
