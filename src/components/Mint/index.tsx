@@ -36,13 +36,12 @@ export const Mint: React.FC = () => {
           }.`,
         };
 
-      // const accounts = await ethereum.request({
-      //   method: "eth_accounts",
-      // });
+      const provider = new ethers.providers.Web3Provider(
+        ethereum as any,
+        "any"
+      );
 
-      // console.log("Found account", accounts);
-
-      const provider = new ethers.providers.Web3Provider(ethereum as any);
+      await provider.send("eth_requestAccounts", []);
 
       const signer = provider.getSigner();
 
