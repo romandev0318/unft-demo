@@ -78,11 +78,12 @@ export const MintBtn: React.FC<Props> = ({ loading, onClick }) => {
       <button
         type='button'
         disabled={
-          (remaining.days === 0 &&
+          !(
+            remaining.days === 0 &&
             remaining.hours === 0 &&
             remaining.minutes === 0 &&
-            remaining.seconds === 0) ||
-          loading
+            remaining.seconds === 0
+          ) || loading
         }
         className='btn-mint'
         onClick={onClick}
