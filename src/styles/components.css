@@ -97,7 +97,7 @@
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
 
-    span {
+    span, svg {
       @apply z-0;
     }
 
@@ -109,7 +109,7 @@
       @apply absolute top-0 left-0 right-0 bottom-0 rounded-[0.65rem] opacity-0 transition ease-in-out delay-200;
     }
 
-    @apply flex justify-center items-center w-full text-[#F2CF37] hover:text-[#EDEDED] text-base relative font-bold rounded-xl py-4 transition ease-in-out delay-200 cursor-pointer hover:before:opacity-100;
+    @apply flex justify-center items-center w-full text-[#F2CF37] fill-[#F2CF37] hover:text-[#EDEDED] hover:fill-[#EDEDED] text-base relative font-bold rounded-xl py-4 transition ease-in-out delay-200 cursor-pointer hover:before:opacity-100;
   }
 
   .btn-mint {
@@ -173,6 +173,15 @@
     background-origin: padding-box, border-box;
     box-shadow: 0px 23px 70px 0px #000000;
     z-index: 1;
+  }
+
+  .modal-border {
+    border: 1px solid transparent;
+    background: linear-gradient(#000, #000),
+      linear-gradient(117.58deg, #5a523c 9.14%, #3e331a 97.97%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    box-shadow: 0px 23px 70px 0px #000000;
   }
 
   .gradient-text {
