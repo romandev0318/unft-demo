@@ -8,7 +8,7 @@ type Props = {
 };
 
 export const MintBtn: React.FC<Props> = ({ loading, onClick }) => {
-  const dayX = new Date(Date.parse("April 1 2022 01:26:00")).getTime();
+  const dayX = new Date(Date.parse(process.env.DAY_X || "")).getTime();
   const today = new Date().getTime();
 
   const [remaining, setRemaining] = useState(
@@ -77,7 +77,13 @@ export const MintBtn: React.FC<Props> = ({ loading, onClick }) => {
 
       <button
         type='button'
-        disabled={dayX - today > 1 || loading}
+        disabled={
+          (remaining.days === 0 &&
+            remaining.hours === 0 &&
+            remaining.minutes === 0 &&
+            remaining.seconds === 0) ||
+          loading
+        }
         className='btn-mint'
         onClick={onClick}
       >
