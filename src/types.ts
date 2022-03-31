@@ -44,3 +44,12 @@ export interface Question {
   question: string;
   answer: string;
 }
+
+export const modalTypes = [
+  "success",
+  "connectionError",
+  "networkSwitch",
+  "error",
+] as const;
+
+export type ModalType = typeof modalTypes[number];
