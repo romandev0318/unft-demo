@@ -8,42 +8,37 @@ type Props = {
 };
 
 export const MintBtn: React.FC<Props> = ({ loading, onClick }) => {
-  const dayX = new Date(Date.parse("April 1 2022 01:12:00")).getTime();
-  const today = Date.now();
+  const dayX = new Date(Date.parse("April 1 2022 01:26:00")).getTime();
+  const today = new Date().getTime();
 
   const [remaining, setRemaining] = useState(
     msToTime(dayX - today > 1 ? dayX - today : null)
   );
 
   useEffect(() => {
-    if (dayX - Date.now() <= 0) return;
+    if (dayX - today <= 0) return;
 
     const interval = setInterval(
-      () =>
-        setRemaining(
-          msToTime(dayX - Date.now() > 1 ? dayX - Date.now() : null)
-        ),
+      () => setRemaining(msToTime(dayX - today > 1 ? dayX - today : null)),
       1000
     );
 
     return () => {
       clearInterval(interval);
     };
-  }, [dayX, remaining]);
+  }, [dayX, today, remaining]);
 
   return (
     <div
       className={`flex flex-col p-5 mx-auto mt-6 md:mt-16 md:p-8 md:mx-0 space-y-6 w-auto max-w-full rounded-[19px] ${
-        dayX - Date.now() > 1
+        dayX - today > 1
           ? "bg-[#020202]/30 backdrop-blur-md"
           : "bg-transparent flex-col-reverse space-y-6 space-y-reverse"
       }`}
     >
       <div
         className={`flex space-x-[9px] md:space-x-4 ${
-          dayX - Date.now() > 1
-            ? "opacity-100"
-            : "opacity-0 pointer-events-none"
+          dayX - today > 1 ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
         <div className='flex flex-col rounded-xl w-24 pt-[6px] pb-[10px] md:pt-4 md:pb-4 bg-[#020202]/40 border border-[#9D9B95]'>
@@ -82,7 +77,7 @@ export const MintBtn: React.FC<Props> = ({ loading, onClick }) => {
 
       <button
         type='button'
-        disabled={dayX - Date.now() > 1 || loading}
+        disabled={dayX - today > 1 || loading}
         className='btn-mint'
         onClick={onClick}
       >
