@@ -1,77 +1,90 @@
-/* eslint-disable @next/next/no-img-element */
-import { useEffect, useState } from "react";
-import { WalletIcon } from "@/assets/svg";
-import { msToTime } from "@/utils/time";
+import { useState } from "react";
+import { ethers } from "ethers";
+import { ModalWrapper } from "../Modal";
+import { MintBtn } from "../MintBtn";
+import getContract from "src/contract";
+import networks from "@/data/networks";
+import { useModal } from "@/utils/useModal";
+import { ModalType } from "src/types";
 
 export const Mint: React.FC = () => {
-  const dayX = new Date(2022, 3, 5).getTime();
-  const today = Date.now();
+  const [loading, setLoading] = useState(false);
+  const { modal, open, openModal, closeModal } = useModal<{
+    type: ModalType;
+    message?: string;
+    tx?: string;
+  }>();
 
-  const [remaining, setRemaining] = useState(
-    msToTime(dayX - today > 1 ? dayX - today : null)
-  );
+  const mint = async () => {
+    setLoading(true);
 
-  useEffect(() => {
-    if (dayX - Date.now() <= 0) return;
+    try {
+      const { ethereum } = window;
 
-    const interval = setInterval(
-      () =>
-        setRemaining(
-          msToTime(dayX - Date.now() > 1 ? dayX - Date.now() : null)
-        ),
-      1000
-    );
+      if (!ethereum) throw { type: "connectionError" };
 
-    return () => {
-      clearInterval(interval);
-    };
-  }, [dayX, remaining]);
+      const chainId = await ethereum.request({ method: "eth_chainId" });
+
+      if (
+        chainId !==
+        networks[process.env.NETWORK as keyof typeof networks].chainId
+      )
+        throw {
+          type: "networkSwitch",
+          message: `Please change your network to ${
+            networks[process.env.NETWORK as keyof typeof networks].chainName
+          }.`,
+        };
+
+      // const accounts = await ethereum.request({
+      //   method: "eth_accounts",
+      // });
+
+      // console.log("Found account", accounts);
+
+      const provider = new ethers.providers.Web3Provider(ethereum as any);
+
+      const signer = provider.getSigner();
+
+      const contract = getContract(signer);
+
+      const cost = await contract.cost();
+
+      console.log("Cost: ", cost);
+
+      const tx = await contract.mint(1, {
+        gasLimit: +(process.env.GAS_LIMIT || "285000"),
+        value: cost.mul(1),
+      });
+
+      await tx.wait();
+
+      setLoading(false);
+      openModal({
+        type: "success",
+        message: "Mint successfull!",
+        tx: `https://${
+          process.env.NETWORK === "rinkeby" ? "rinkeby." : ""
+        }etherscan.io/tx/${tx.hash}`,
+      });
+    } catch (error: any) {
+      console.error("Error minting", error);
+      setLoading(false);
+      openModal(
+        error.type
+          ? { ...error }
+          : {
+              type: "error",
+              message: "Sorry, something went wrong. Try again later",
+            }
+      );
+    }
+  };
 
   return (
-    <div className='p-5 mx-auto mt-6 md:mt-16 md:p-8 md:mx-0 w-auto max-w-full space-y-6 backdrop-blur-md bg-[#020202]/30 rounded-[19px]'>
-      <div className='flex space-x-[9px] md:space-x-4'>
-        <div className='flex flex-col rounded-xl w-24 pt-[6px] pb-[10px] md:pt-4 md:pb-4 bg-[#020202]/40 border border-[#9D9B95]'>
-          <span className='text-[22px] md:text-2xl font-semibold -mb-1 text-[#F2F2F2]'>
-            {remaining.days}
-          </span>
-          <span className='text-[12px] md:text-sm font-bold text-[#BCBCBC] tracking-tighter'>
-            Days
-          </span>
-        </div>
-        <div className='flex flex-col rounded-xl w-24 pt-[6px] pb-[10px] md:pt-4 md:pb-4 bg-[#020202]/40 border border-[#9D9B95]'>
-          <span className='text-[22px] md:text-2xl font-semibold -mb-1 text-[#F2F2F2]'>
-            {remaining.hours}
-          </span>
-          <span className='text-[12px] md:text-sm font-bold text-[#BCBCBC] tracking-tighter'>
-            Hours
-          </span>
-        </div>
-        <div className='flex flex-col rounded-xl w-24 pt-[6px] pb-[10px] md:pt-4 md:pb-4 bg-[#020202]/40 border border-[#9D9B95]'>
-          <span className='text-[22px] md:text-2xl font-semibold -mb-1 text-[#F2F2F2]'>
-            {remaining.minutes}
-          </span>
-          <span className='text-[12px] md:text-sm font-bold text-[#BCBCBC] tracking-tighter'>
-            Minutes
-          </span>
-        </div>
-        <div className='flex flex-col rounded-xl w-24 pt-[6px] pb-[10px] md:pt-4 md:pb-4 bg-[#020202]/40 border border-[#9D9B95]'>
-          <span className='text-[22px] md:text-2xl font-semibold -mb-1 text-[#F2F2F2]'>
-            {remaining.seconds}
-          </span>
-          <span className='text-[12px] md:text-sm font-bold text-[#BCBCBC] tracking-tighter'>
-            Seconds
-          </span>
-        </div>
-      </div>
-
-      <button
-        type='button'
-        disabled={dayX - Date.now() > 1}
-        className='btn-mint'
-      >
-        <WalletIcon className='mr-2 z-0' />
-        <span>Mint</span>
-      </button>
-    </div>
+    <>
+      <ModalWrapper {...modal} open={open} closeModal={closeModal} />
+      <MintBtn loading={loading} onClick={mint} />
+    </>
   );
 };
