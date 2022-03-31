@@ -5,17 +5,17 @@ import { useRouter } from "next/router";
 import { UNFTLogoImage } from "@/assets/img";
 import { Links } from "@/components/Links";
 import { links } from "@/data/links";
+import { useToggle } from "@/utils/useToggle";
 
 export const Header: React.FC = () => {
-  const [open, setOpen] = useState(false);
+  const [open, toggle, setOpen] = useToggle();
   const [small, setSmall] = useState(false);
 
   const router = useRouter();
 
-  const toggleOpen = () => setOpen((state) => !state);
-
   useEffect(() => {
     setOpen(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router]);
 
   useEffect(() => {
@@ -48,7 +48,7 @@ export const Header: React.FC = () => {
         <div
           className={`block md:hidden ${open ? "open" : ""}`}
           id='toggler'
-          onClick={toggleOpen}
+          onClick={toggle}
         ></div>
 
         <nav

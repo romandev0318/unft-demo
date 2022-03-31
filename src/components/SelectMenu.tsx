@@ -1,6 +1,6 @@
 import { ArrowDropdownIcon } from "@/assets/svg";
 import { camelCaseToTitleCase } from "@/utils/camelCaseToTitleCase";
-import { useState } from "react";
+import { useToggle } from "@/utils/useToggle";
 
 type Props = {
   className?: string;
@@ -15,9 +15,7 @@ export const SelectMenu: React.FC<Props> = ({
   options,
   onChange,
 }) => {
-  const [open, setOpen] = useState(false);
-
-  const toggleOpen = () => setOpen((state) => !state);
+  const [open, toggle] = useToggle();
 
   return (
     <div className={`w-full sm:w-36 md:w-56 ${className}`}>
@@ -25,7 +23,7 @@ export const SelectMenu: React.FC<Props> = ({
         className={`flex justify-between items-center pl-3 py-2 pr-2 rounded-xl border-2 border-[#353945] cursor-pointer transition ease-in-out delay-200 ${
           open ? "border-[#FAFAFB]" : ""
         }`}
-        onClick={toggleOpen}
+        onClick={toggle}
       >
         <span className='font-medium text-sm leading-3'>
           {value ? camelCaseToTitleCase(value) : "All items"}
@@ -46,7 +44,7 @@ export const SelectMenu: React.FC<Props> = ({
             ? "pointer-events-auto opacity-100"
             : "opacity-0 pointer-events-none"
         }`}
-        onClick={toggleOpen}
+        onClick={toggle}
       >
         {options.map((option, i) => (
           <div

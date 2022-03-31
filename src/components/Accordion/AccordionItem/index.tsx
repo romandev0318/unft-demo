@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useToggle } from "@/utils/useToggle";
 import { Question } from "src/types";
 
 export const AccordionItem: React.FC<Question & { opened?: boolean }> = ({
@@ -6,16 +6,14 @@ export const AccordionItem: React.FC<Question & { opened?: boolean }> = ({
   answer,
   opened,
 }) => {
-  const [open, setOpen] = useState(opened);
-
-  const toggleOpen = () => setOpen((state) => !state);
+  const [open, toggle] = useToggle(opened);
 
   return (
     <div
       className={`rounded-3xl cursor-pointer group border transition ease-in-out duration-200 overflow-hidden p-6 ${
         open ? "bg-[#F8D47A]/20 border-[#F8D47A]" : "bg-black border-[#ABABAB]"
       }`}
-      onClick={toggleOpen}
+      onClick={toggle}
     >
       <div className='flex justify-between items-center'>
         <span
