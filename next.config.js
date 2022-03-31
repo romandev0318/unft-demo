@@ -11,6 +11,11 @@ const nextConfig = {
 
     return config;
   },
+  env: {
+    DAY_X: process.env.DAY_X,
+    CONTRACT_ADDRESS: process.env.CONTRACT_ADDRESS,
+    NETWORK: process.env.NETWORK,
+  },
 };
 
 module.exports = nextConfig;

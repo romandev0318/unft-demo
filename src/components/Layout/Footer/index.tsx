@@ -26,7 +26,7 @@ export const Footer: React.FC = () => (
             TRIP smart contract address:
           </span>
           <span className='text-white font-normal'>
-            0x692f6bbea88da58268cce0fc92897e416eccc03c
+            {process.env.CONTRACT_ADDRESS}
           </span>
         </p>
       </div>
