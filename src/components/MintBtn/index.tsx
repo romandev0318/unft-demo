@@ -8,7 +8,7 @@ type Props = {
 };
 
 export const MintBtn: React.FC<Props> = ({ loading, onClick }) => {
-  const dayX = new Date(Date.parse(process.env.DAY_X || "")).getTime();
+  const dayX = new Date(Date.parse("April 1 2022 01:12:00")).getTime();
   const today = Date.now();
 
   const [remaining, setRemaining] = useState(
