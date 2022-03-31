@@ -28,10 +28,14 @@ export const Header: React.FC = () => {
 
   return (
     <header
-      className={`opacity-100 bg-black/0 fixed w-full top-0 left-0 right-0 transition-[background-color,backdrop-filter,height,padding] ease-in-out delay-200 z-10 
+      className={`opacity-100 fixed w-full top-0 left-0 right-0 transition-[background-color,backdrop-filter,height,padding] ease-in-out delay-200 z-10 
       ${open ? "h-full" : "h-[100px] md:h-[164px] lg:h-[176px]"} 
       ${small && !open ? "h-[84px] md:h-[100px] lg:h-[112px]" : ""} 
-      ${small || open ? "opacity-100 backdrop-blur-lg bg-black/70" : ""}`}
+      ${
+        small || open
+          ? "opacity-100 backdrop-blur-lg bg-black/70"
+          : "bg-black/0"
+      }`}
     >
       <div
         className={`flex items-center w-full 2xl:max-w-screen-2xl mx-auto justify-between transition-[padding] ease-in-out delay-200 
