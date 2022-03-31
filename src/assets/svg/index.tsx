@@ -6,6 +6,7 @@ import TridentIcon from "@/public/svg/trident.svg";
 import ArrowIcon from "@/public/svg/arrow.svg";
 import ArrowDropdownIcon from "@/public/svg/arrow-dropdown.svg";
 import WalletIcon from "@/public/svg/wallet.svg";
+import MetamaskIcon from "@/public/svg/Metamask.svg";
 
 // Socials
 import DiscordIcon from "@/public/svg/discord.svg";
@@ -35,4 +36,5 @@ export {
   ArrowIcon,
   ArrowDropdownIcon,
   WalletIcon,
+  MetamaskIcon,
 };
