@@ -21,6 +21,8 @@ export const Mint: React.FC = () => {
   const expired =
     new Date(Date.parse(process.env.DAY_X || "")).getTime() - Date.now() <= 0;
 
+  console.log(expired)
+
   const mint = async () => {
     if (!expired || loading) return;
 
@@ -91,15 +93,16 @@ export const Mint: React.FC = () => {
   return (
     <>
       <ModalWrapper {...modal} open={open} closeModal={closeModal} />
-      <Timer remaining={remaining} expired={expired}></Timer>
-      <button
-        type='button'
-        className={`btn-mint ${!expired || loading ? "disabled" : ""}`}
-        onClick={mint}
-      >
-        <WalletIcon className={`mr-2 z-0 ${loading ? "hidden" : "block"}`} />
-        <span>{loading ? "Processing..." : "Mint"}</span>
-      </button>
+      <Timer remaining={remaining} expired={expired}>
+        <button
+          type='button'
+          className={!expired || loading ? "btn-mint disabled" : "btn-mint"}
+          onClick={mint}
+        >
+          <WalletIcon className={`mr-2 z-0 ${loading ? "hidden" : "block"}`} />
+          <span>{loading ? "Processing..." : "Mint"}</span>
+        </button>
+      </Timer>
     </>
   );
 };

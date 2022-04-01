@@ -16,6 +16,9 @@ const nextConfig = {
     CONTRACT_ADDRESS: process.env.CONTRACT_ADDRESS,
     NETWORK: process.env.NETWORK,
   },
+  experimental: {
+    optimizeCss: true,
+  },
 };
 
 module.exports = nextConfig;
