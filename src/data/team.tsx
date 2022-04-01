@@ -18,18 +18,6 @@ export const team: Member[] = [
     title: "UI / UX Designer",
     links: [
       {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
-      {
-        url: "https://telegram.org/",
-        label: "telegram",
-      },
-      {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
-      {
         url: "https://instagram.com/",
         label: "instagram",
       },
@@ -49,18 +37,6 @@ export const team: Member[] = [
     fullName: "Nadiia Kravchenko",
     title: "Team manager",
     links: [
-      {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
-      {
-        url: "https://telegram.org/",
-        label: "telegram",
-      },
-      {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
       {
         url: "https://instagram.com/",
         label: "instagram",
@@ -82,18 +58,6 @@ export const team: Member[] = [
     title: "Artist",
     links: [
       {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
-      {
-        url: "https://telegram.org/",
-        label: "telegram",
-      },
-      {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
-      {
         url: "https://instagram.com/",
         label: "instagram",
       },
@@ -113,18 +77,6 @@ export const team: Member[] = [
     fullName: "Victoria Abramovich",
     title: "Staking Advisor & Director Of Implementation",
     links: [
-      {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
-      {
-        url: "https://telegram.org/",
-        label: "telegram",
-      },
-      {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
       {
         url: "https://instagram.com/",
         label: "instagram",
@@ -146,18 +98,6 @@ export const team: Member[] = [
     title: "Senior Advisor",
     links: [
       {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
-      {
-        url: "https://telegram.org/",
-        label: "telegram",
-      },
-      {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
-      {
         url: "https://instagram.com/",
         label: "instagram",
       },
@@ -177,18 +117,6 @@ export const team: Member[] = [
     fullName: "Tatyana Rubka",
     title: "Ui / Ux Designer",
     links: [
-      {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
-      {
-        url: "https://telegram.org/",
-        label: "telegram",
-      },
-      {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
       {
         url: "https://instagram.com/",
         label: "instagram",
@@ -210,18 +138,6 @@ export const team: Member[] = [
     title: "Staking Advisor & Director Of Implementation",
     links: [
       {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
-      {
-        url: "https://telegram.org/",
-        label: "telegram",
-      },
-      {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
-      {
         url: "https://instagram.com/",
         label: "instagram",
       },
@@ -241,18 +157,6 @@ export const team: Member[] = [
     fullName: "Serhei Lomachenko",
     title: "Senior Advisor",
     links: [
-      {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
-      {
-        url: "https://telegram.org/",
-        label: "telegram",
-      },
-      {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
       {
         url: "https://instagram.com/",
         label: "instagram",
@@ -274,18 +178,6 @@ export const team: Member[] = [
     title: "NFT Specialist",
     links: [
       {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
-      {
-        url: "https://telegram.org/",
-        label: "telegram",
-      },
-      {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
-      {
         url: "https://instagram.com/",
         label: "instagram",
       },
@@ -306,18 +198,6 @@ export const team: Member[] = [
     title: "UI / UX Designer",
     links: [
       {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
-      {
-        url: "https://telegram.org/",
-        label: "telegram",
-      },
-      {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
-      {
         url: "https://instagram.com/",
         label: "instagram",
       },
@@ -337,18 +217,6 @@ export const team: Member[] = [
     fullName: "Elona Musk",
     title: "UI / UX Designer",
     links: [
-      {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
-      {
-        url: "https://telegram.org/",
-        label: "telegram",
-      },
-      {
-        url: "https://twitter.com/",
-        label: "twitter",
-      },
       {
         url: "https://instagram.com/",
         label: "instagram",
