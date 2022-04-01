@@ -29,4 +29,14 @@ const Home: NextPage = () => (
   </Layout>
 );
 
+export const getStaticProps = async () => {
+  const dayX = new Date(Date.parse(process.env.DAY_X || "")).getTime();
+  const expired = process.env.DAY_X ? dayX - Date.now() <= 0 : false;
+
+  return {
+    props: { expired },
+    revalidate: 1,
+  };
+};
+
 export default Home;
