@@ -2,6 +2,7 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
+  generateEtags: false,
   reactStrictMode: true,
   webpack(config) {
     config.module.rules.push({
