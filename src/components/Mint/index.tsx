@@ -27,6 +27,13 @@ export const Mint: React.FC = () => {
 
       if (!ethereum) throw { type: "connectionError" };
 
+      const provider = new ethers.providers.Web3Provider(
+        ethereum as any,
+        "any"
+      );
+
+      await provider.send("eth_requestAccounts", []);
+
       const chainId = await ethereum.request({ method: "eth_chainId" });
 
       if (
@@ -39,13 +46,6 @@ export const Mint: React.FC = () => {
             networks[process.env.NETWORK as keyof typeof networks].chainName
           }.`,
         };
-
-      const provider = new ethers.providers.Web3Provider(
-        ethereum as any,
-        "any"
-      );
-
-      await provider.send("eth_requestAccounts", []);
 
       const signer = provider.getSigner();
 
