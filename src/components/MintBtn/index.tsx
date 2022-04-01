@@ -1,5 +1,7 @@
 import { useCountdown } from "@/hooks/useCountdown";
 import { WalletIcon } from "@/assets/svg";
+import { useEffect } from "react";
+import { useForceUpdate } from "@/hooks/useForceUpdate";
 
 type Props = {
   loading: boolean;
@@ -8,6 +10,13 @@ type Props = {
 
 export const MintBtn: React.FC<Props> = ({ loading, onClick }) => {
   const { remaining, expired } = useCountdown(process.env.DAY_X || "");
+
+  const forceUpdate = useForceUpdate();
+
+  useEffect(() => {
+    if (expired) forceUpdate();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [expired]);
 
   return (
     <div
