@@ -5,6 +5,11 @@ export const useCountdown = (dayXDate: string) => {
   const dayX = new Date(Date.parse(dayXDate)).getTime();
 
   const [remaining, setRemaining] = useState(dayX - Date.now());
+  const [expired, setExpired] = useState(false);
+
+  useEffect(() => {
+    setExpired(remaining <= 0);
+  }, [remaining]);
 
   useEffect(() => {
     const interval = setInterval(
@@ -12,10 +17,8 @@ export const useCountdown = (dayXDate: string) => {
       1000
     );
 
-    return () => {
-      clearInterval(interval);
-    };
+    return () => clearInterval(interval);
   }, [dayX, remaining]);
 
-  return { remaining: msToTime(remaining), expired: remaining <= 0 };
+  return { remaining: msToTime(remaining), expired };
 };

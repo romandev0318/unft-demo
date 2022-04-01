@@ -16,17 +16,9 @@ export const Mint: React.FC = () => {
     message?: string;
     tx?: string;
   }>();
-  const { remaining } = useCountdown(process.env.DAY_X || "April 1 2022");
-
-  const [expired, setExpired] = useState(false);
-
-  useEffect(() => {
-    setExpired(
-      new Date(Date.parse(process.env.DAY_X || "")).getTime() - Date.now() <= 0
-    );
-  }, [remaining]);
-
-  console.log(expired);
+  const { remaining, expired } = useCountdown(
+    process.env.DAY_X || "April 1 2022"
+  );
 
   const mint = async () => {
     if (!expired || loading) return;
@@ -98,7 +90,6 @@ export const Mint: React.FC = () => {
   return (
     <>
       <ModalWrapper {...modal} open={open} closeModal={closeModal} />
-      <span className='sr-only'>{expired.toString()}</span>
       <Timer remaining={remaining} expired={expired}>
         <button
           type='button'
