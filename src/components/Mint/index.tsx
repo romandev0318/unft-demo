@@ -16,7 +16,7 @@ export const Mint: React.FC = () => {
     tx?: string;
   }>();
   const { remaining, expired } = useCountdown(
-    process.env.DAY_X || "April 1 2022 16:56"
+    process.env.DAY_X || "April 1 2022"
   );
 
   const mint = async () => {
@@ -87,23 +87,12 @@ export const Mint: React.FC = () => {
   return (
     <>
       <ModalWrapper {...modal} open={open} closeModal={closeModal} />
-      {console.log(expired)}
-      {!expired && (
-        <MintBtn
-          remaining={remaining}
-          expired={expired}
-          loading={loading}
-          onClick={mint}
-        />
-      )}
-      {expired && (
-        <MintBtn
-          remaining={remaining}
-          expired={true}
-          loading={loading}
-          onClick={mint}
-        />
-      )}
+      <MintBtn
+        remaining={remaining}
+        expired={expired}
+        loading={loading}
+        onClick={mint}
+      />
     </>
   );
 };
