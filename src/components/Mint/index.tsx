@@ -87,12 +87,23 @@ export const Mint: React.FC = () => {
   return (
     <>
       <ModalWrapper {...modal} open={open} closeModal={closeModal} />
-      <MintBtn
-        remaining={remaining}
-        expired={expired}
-        loading={loading}
-        onClick={mint}
-      />
+      {console.log(expired)}
+      {!expired && (
+        <MintBtn
+          remaining={remaining}
+          expired={expired}
+          loading={loading}
+          onClick={mint}
+        />
+      )}
+      {expired && (
+        <MintBtn
+          remaining={remaining}
+          expired={true}
+          loading={loading}
+          onClick={mint}
+        />
+      )}
     </>
   );
 };
