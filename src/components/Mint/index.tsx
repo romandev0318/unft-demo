@@ -16,9 +16,10 @@ export const Mint: React.FC = () => {
     message?: string;
     tx?: string;
   }>();
-  const { remaining, expired } = useCountdown(
-    process.env.DAY_X || "April 1 2022"
-  );
+  const { remaining } = useCountdown(process.env.DAY_X || "April 1 2022");
+
+  const expired =
+    new Date(Date.parse(process.env.DAY_X || "")).getTime() - Date.now() <= 0;
 
   const mint = async () => {
     if (!expired || loading) return;
