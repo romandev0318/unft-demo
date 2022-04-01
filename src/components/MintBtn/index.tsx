@@ -17,6 +17,7 @@ export const MintBtn: React.FC<Props> = ({ loading, onClick }) => {
           : "bg-transparent flex-col-reverse space-y-6 space-y-reverse"
       }`}
     >
+      {console.log(expired, remaining)}
       <div
         className={`flex space-x-[9px] md:space-x-4 ${
           !expired ? "opacity-100" : "opacity-0 pointer-events-none"

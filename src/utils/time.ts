@@ -6,7 +6,7 @@ export const msToTime = (ms: number | null) => {
     seconds: 0,
   };
 
-  if (!ms) return time;
+  if (!ms || ms <= 0) return time;
 
   time.days = Math.floor(ms / (24 * 60 * 60 * 1000));
   time.hours = Math.floor((ms % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
