@@ -21,7 +21,7 @@ export const Mint: React.FC = () => {
   const expired =
     new Date(Date.parse(process.env.DAY_X || "")).getTime() - Date.now() <= 0;
 
-  console.log(expired)
+  console.log(expired);
 
   const mint = async () => {
     if (!expired || loading) return;
@@ -93,6 +93,7 @@ export const Mint: React.FC = () => {
   return (
     <>
       <ModalWrapper {...modal} open={open} closeModal={closeModal} />
+      <span className='sr-only'>{expired.toString()}</span>
       <Timer remaining={remaining} expired={expired}>
         <button
           type='button'
