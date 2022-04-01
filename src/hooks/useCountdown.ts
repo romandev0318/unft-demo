@@ -16,7 +16,5 @@ export const useCountdown = (dayXDate: string) => {
     };
   }, [dayX, remaining]);
 
-  console.log(remaining);
-
   return { remaining: msToTime(remaining), expired: remaining < 0 };
 };

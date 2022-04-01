@@ -1,6 +1,4 @@
-import { useCountdown } from "@/hooks/useCountdown";
 import { WalletIcon } from "@/assets/svg";
-import { useEffect, useState } from "react";
 
 type Props = {
   remaining: {
@@ -70,7 +68,7 @@ export const MintBtn: React.FC<Props> = ({
       type='button'
       disabled={!expired || loading}
       className='btn-mint'
-      onClick={onClick}
+      onClick={() => expired && !loading && onClick()}
     >
       <WalletIcon className={`mr-2 z-0 ${loading ? "hidden" : "block"}`} />
       <span>{loading ? "Processing..." : "Mint"}</span>
