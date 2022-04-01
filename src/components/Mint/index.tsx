@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import { ModalWrapper } from "../Modal";
 import { Timer } from "../Timer";
@@ -18,8 +18,13 @@ export const Mint: React.FC = () => {
   }>();
   const { remaining } = useCountdown(process.env.DAY_X || "April 1 2022");
 
-  const expired =
-    new Date(Date.parse(process.env.DAY_X || "")).getTime() - Date.now() <= 0;
+  const [expired, setExpired] = useState(false);
+
+  useEffect(() => {
+    setExpired(
+      new Date(Date.parse(process.env.DAY_X || "")).getTime() - Date.now() <= 0
+    );
+  }, [remaining]);
 
   console.log(expired);
 
