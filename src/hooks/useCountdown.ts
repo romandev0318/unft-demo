@@ -3,28 +3,18 @@ import { msToTime } from "@/utils/time";
 
 export const useCountdown = (dayXDate: string) => {
   const dayX = new Date(Date.parse(dayXDate)).getTime();
-  const today = Date.now();
 
-  const [remaining, setRemaining] = useState(
-    msToTime(dayX - today > 1 ? dayX - today : null)
-  );
+  const [remaining, setRemaining] = useState(dayX - Date.now());
 
   useEffect(() => {
-    if (dayX - today <= 0) return;
+    if (remaining < 0) return;
 
-    const interval = setInterval(
-      () => setRemaining(msToTime(dayX - today > 1 ? dayX - today : null)),
-      1000
-    );
+    const interval = setInterval(() => setRemaining(dayX - Date.now()), 1000);
 
     return () => {
       clearInterval(interval);
     };
-  }, [dayX, today, remaining]);
+  }, [dayX, remaining]);
 
-  const expired =
-    remaining.days + remaining.hours + remaining.minutes + remaining.seconds <=
-    0;
-
-  return { remaining, expired };
+  return { remaining: msToTime(remaining), expired: remaining < 0 };
 };
