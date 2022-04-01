@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import { UNFTLogoImage } from "@/assets/img";
 import { Links } from "@/components/Links";
 import { links } from "@/data/links";
-import { useToggle } from "@/utils/useToggle";
+import { useToggle } from "@/hooks/useToggle";
 
 export const Header: React.FC = () => {
   const [open, toggle, setOpen] = useToggle();

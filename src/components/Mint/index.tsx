@@ -4,7 +4,7 @@ import { ModalWrapper } from "../Modal";
 import { MintBtn } from "../MintBtn";
 import getContract from "src/contract";
 import networks from "@/data/networks";
-import { useModal } from "@/utils/useModal";
+import { useModal } from "@/hooks/useModal";
 import { ModalType } from "src/types";
 
 export const Mint: React.FC = () => {

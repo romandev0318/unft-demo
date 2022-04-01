@@ -1,4 +1,4 @@
-import { useToggle } from "@/utils/useToggle";
+import { useToggle } from "@/hooks/useToggle";
 import { Question } from "src/types";
 
 export const AccordionItem: React.FC<Question & { opened?: boolean }> = ({

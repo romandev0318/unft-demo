@@ -1,6 +1,6 @@
 import { ArrowDropdownIcon } from "@/assets/svg";
 import { camelCaseToTitleCase } from "@/utils/camelCaseToTitleCase";
-import { useToggle } from "@/utils/useToggle";
+import { useToggle } from "@/hooks/useToggle";
 
 type Props = {
   className?: string;
