@@ -7,7 +7,7 @@ type Props = {
 };
 
 export const MintBtn: React.FC<Props> = ({ loading, onClick }) => {
-  const { remaining, expired } = useCountdown("April 1 2022 14:10"); // process.env.DAY_X
+  const { remaining, expired } = useCountdown(process.env.DAY_X || "");
 
   return (
     <div
