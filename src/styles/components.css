@@ -97,7 +97,8 @@
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
 
-    span, svg {
+    span,
+    svg {
       @apply z-0;
     }
 
@@ -124,7 +125,7 @@
       background: linear-gradient(95.13deg, #edb11d 0.7%, #1f6bc4 100.05%);
     }
 
-    &[disabled] {
+    &.disabled {
       background: linear-gradient(#000, #000),
         linear-gradient(95.82deg, #fcd330 0.06%, #1c6bc3 70.91%, #1c6bc3 98.28%);
       background-clip: padding-box, border-box;

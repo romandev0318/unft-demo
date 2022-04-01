@@ -8,16 +8,9 @@ type Props = {
     seconds: number;
   };
   expired: boolean;
-  loading: boolean;
-  onClick: () => void;
 };
 
-export const MintBtn: React.FC<Props> = ({
-  remaining,
-  expired,
-  loading,
-  onClick,
-}) => (
+export const Timer: React.FC<Props> = ({ remaining, expired, children }) => (
   <div
     className={`flex flex-col p-5 mx-auto mt-6 md:mt-16 md:p-8 md:mx-0 space-y-6 w-auto max-w-full rounded-[19px] ${
       !expired
@@ -64,14 +57,6 @@ export const MintBtn: React.FC<Props> = ({
       </div>
     </div>
 
-    <button
-      type='button'
-      disabled={!expired || loading}
-      className='btn-mint'
-      onClick={() => expired && !loading && onClick()}
-    >
-      <WalletIcon className={`mr-2 z-0 ${loading ? "hidden" : "block"}`} />
-      <span>{loading ? "Processing..." : "Mint"}</span>
-    </button>
+    {children}
   </div>
 );

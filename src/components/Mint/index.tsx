@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { ethers } from "ethers";
 import { ModalWrapper } from "../Modal";
-import { MintBtn } from "../MintBtn";
+import { Timer } from "../Timer";
 import getContract from "src/contract";
 import networks from "@/data/networks";
 import { useModal } from "@/hooks/useModal";
 import { useCountdown } from "@/hooks/useCountdown";
 import { ModalType } from "src/types";
+import { WalletIcon } from "@/assets/svg";
 
 export const Mint: React.FC = () => {
   const [loading, setLoading] = useState(false);
@@ -20,6 +21,8 @@ export const Mint: React.FC = () => {
   );
 
   const mint = async () => {
+    if (!expired || loading) return;
+
     setLoading(true);
 
     try {
@@ -87,12 +90,16 @@ export const Mint: React.FC = () => {
   return (
     <>
       <ModalWrapper {...modal} open={open} closeModal={closeModal} />
-      <MintBtn
-        remaining={remaining}
-        expired={expired}
-        loading={loading}
-        onClick={mint}
-      />
+      <Timer remaining={remaining} expired={expired}>
+        <button
+          type='button'
+          className={`btn-mint ${!expired || loading ? "disabled" : ""}`}
+          onClick={mint}
+        >
+          <WalletIcon className={`mr-2 z-0 ${loading ? "hidden" : "block"}`} />
+          <span>{loading ? "Processing..." : "Mint"}</span>
+        </button>
+      </Timer>
     </>
   );
 };
