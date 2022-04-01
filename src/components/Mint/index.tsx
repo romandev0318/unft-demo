@@ -5,6 +5,7 @@ import { MintBtn } from "../MintBtn";
 import getContract from "src/contract";
 import networks from "@/data/networks";
 import { useModal } from "@/hooks/useModal";
+import { useCountdown } from "@/hooks/useCountdown";
 import { ModalType } from "src/types";
 
 export const Mint: React.FC = () => {
@@ -14,6 +15,7 @@ export const Mint: React.FC = () => {
     message?: string;
     tx?: string;
   }>();
+  const { remaining, expired } = useCountdown(process.env.DAY_X || "");
 
   const mint = async () => {
     setLoading(true);
@@ -83,7 +85,12 @@ export const Mint: React.FC = () => {
   return (
     <>
       <ModalWrapper {...modal} open={open} closeModal={closeModal} />
-      <MintBtn loading={loading} onClick={mint} />
+      <MintBtn
+        remaining={remaining}
+        expired={expired}
+        loading={loading}
+        onClick={mint}
+      />
     </>
   );
 };
