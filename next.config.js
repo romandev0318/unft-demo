@@ -15,6 +15,8 @@ const nextConfig = {
     DAY_X: process.env.DAY_X,
     CONTRACT_ADDRESS: process.env.CONTRACT_ADDRESS,
     NETWORK: process.env.NETWORK,
+    API_URL: process.env.API_URL,
+    APP_SECRET: process.env.APP_SECRET,
   },
 };
 
