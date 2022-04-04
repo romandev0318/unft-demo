@@ -18,7 +18,7 @@ export const team: Member[] = [
     title: "Artist",
     links: [
       {
-        url: "https://instagram.com/",
+        url: "https://www.instagram.com/erin.felis/",
         label: "instagram",
       },
     ],
@@ -38,7 +38,7 @@ export const team: Member[] = [
     title: "Artist",
     links: [
       {
-        url: "https://instagram.com/",
+        url: "https://instagram.com/klu.arty?utm_medium=copy_link",
         label: "instagram",
       },
     ],
@@ -58,7 +58,7 @@ export const team: Member[] = [
     title: "Artist",
     links: [
       {
-        url: "https://instagram.com/",
+        url: "https://instagram.com/tanisia_art?utm_medium=copy_link",
         label: "instagram",
       },
     ],
@@ -78,7 +78,7 @@ export const team: Member[] = [
     title: "PR Agent",
     links: [
       {
-        url: "https://instagram.com/",
+        url: "https://instagram.com/kharchenko_annyR",
         label: "instagram",
       },
     ],
@@ -98,7 +98,7 @@ export const team: Member[] = [
     title: "Artist consultant, SMM",
     links: [
       {
-        url: "https://instagram.com/",
+        url: "https://www.instagram.com/miss_avl/",
         label: "instagram",
       },
     ],
@@ -118,7 +118,7 @@ export const team: Member[] = [
     title: "UI / UX Designer",
     links: [
       {
-        url: "https://instagram.com/",
+        url: "https://www.instagram.com/john.mevis/",
         label: "instagram",
       },
     ],
@@ -138,7 +138,7 @@ export const team: Member[] = [
     title: "Lead graphic designer",
     links: [
       {
-        url: "https://instagram.com/",
+        url: "https://www.instagram.com/ihor.lutz/",
         label: "instagram",
       },
     ],
@@ -158,7 +158,7 @@ export const team: Member[] = [
     title: "Marketing manager",
     links: [
       {
-        url: "https://instagram.com/",
+        url: "https://www.instagram.com/showtimesanya/",
         label: "instagram",
       },
     ],
@@ -178,7 +178,7 @@ export const team: Member[] = [
     title: "Head of Development & Integration. Co-founder CGT group",
     links: [
       {
-        url: "https://instagram.com/",
+        url: "https://instagram.com/cherman.daniel?utm_medium=copy_link",
         label: "instagram",
       },
     ],
@@ -198,7 +198,7 @@ export const team: Member[] = [
     title: "Co-founder CGT group",
     links: [
       {
-        url: "https://instagram.com/",
+        url: "https://instagram.com/artemtrubylo?utm_medium=copy_link",
         label: "instagram",
       },
     ],
@@ -218,7 +218,7 @@ export const team: Member[] = [
     title: "Co-founder",
     links: [
       {
-        url: "https://instagram.com/",
+        url: "https://www.instagram.com/art.inlbs/",
         label: "instagram",
       },
     ],
@@ -238,7 +238,7 @@ export const team: Member[] = [
     title: "Co-founder",
     links: [
       {
-        url: "https://instagram.com/",
+        url: "https://www.instagram.com/artyr_bersh/",
         label: "instagram",
       },
     ],
