@@ -78,7 +78,7 @@ export const team: Member[] = [
     title: "PR Agent",
     links: [
       {
-        url: "https://instagram.com/kharchenko_annyR",
+        url: "https://instagram.com/kharchenko_anny",
         label: "instagram",
       },
     ],
