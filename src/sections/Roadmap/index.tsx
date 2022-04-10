@@ -126,14 +126,14 @@ export const Roadmap: React.FC = () => (
                 Assistance to refugees
               </span>
             </li>
-            <li className='flex mb-4'>
+            {/* <li className='flex mb-4'>
               <div className='p-1 mr-4 mb-auto'>
                 <StarIcon />
               </div>
               <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
                 Organization of simple boarding schools for children
               </span>
-            </li>
+            </li> */}
             <li className='flex mb-4'>
               <div className='p-1 mr-4 mb-auto'>
                 <StarIcon />
@@ -147,8 +147,7 @@ export const Roadmap: React.FC = () => (
                 <StarIcon />
               </div>
               <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
-                Preparation of training courses and selection of experts for the
-                preparation of chains of courses
+              Help for people affected by the war
               </span>
             </li>
           </ul>
@@ -251,14 +250,14 @@ export const Roadmap: React.FC = () => (
                 Medical consultations
               </span>
             </li>
-            <li className='flex mb-4'>
+            {/* <li className='flex mb-4'>
               <div className='p-1 mr-4 mb-auto'>
                 <StarIcon />
               </div>
               <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
                 Organization of training for adult migrants
               </span>
-            </li>
+            </li> */}
             <li className='flex mb-4'>
               <div className='p-1 mr-4 mb-auto'>
                 <StarIcon />
@@ -267,14 +266,14 @@ export const Roadmap: React.FC = () => (
                 Full audit &amp; KYC to ensure security &amp; transparency
               </span>
             </li>
-            <li className='flex mb-4'>
+            {/* <li className='flex mb-4'>
               <div className='p-1 mr-4 mb-auto'>
                 <StarIcon />
               </div>
               <span className='text-[#F6EDD4] text-lg font-semibold leading-relaxed'>
                 Building a system of education in orphanages
               </span>
-            </li>
+            </li> */}
           </ul>
         </div>
       </li>

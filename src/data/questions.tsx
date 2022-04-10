@@ -4,7 +4,7 @@ export const questions: Question[] = [
   {
     question: "Who we are?",
     answer:
-      "UA-NFT is 15000 uniquely generated cards of all participants in the war in Ukraine. Our goal is to create a new generation hub. Education for children by the affected war, education for children from orphanages, the opportunity to learn new professions with international experts and the possibility of employment in the global market",
+      "UA-NFT is 15000 uniquely generated cards of all participants in the war in Ukraine.Our goal is to help people affected by the war",
   },
   {
     question: "What is the Supply?",
