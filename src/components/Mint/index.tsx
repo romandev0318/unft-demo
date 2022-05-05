@@ -8,7 +8,6 @@ import { useModal } from "@/hooks/useModal";
 import { useCountdown } from "@/hooks/useCountdown";
 import { ModalType } from "src/types";
 import { WalletIcon } from "@/assets/svg";
-import fetchAPI from "@/utils/fetchAPI";
 
 export const Mint: React.FC = () => {
   const [loading, setLoading] = useState(false);
@@ -65,17 +64,6 @@ export const Mint: React.FC = () => {
       });
 
       await tx.wait();
-
-      const utmSource = localStorage.getItem("utm_source");
-
-      if (utmSource) {
-        const { res, error } = await fetchAPI(`/counter/${utmSource}/mint`, {
-          method: "post",
-          auth: true,
-        });
-
-        if (!error) console.log(res.message);
-      }
 
       setLoading(false);
       openModal({
