@@ -20,5 +20,5 @@ export const useCountdown = (dayXDate: string) => {
     return () => clearInterval(interval);
   }, [dayX, remaining]);
 
-  return { remaining: msToTime(remaining), expired };
+  return { remaining: msToTime(remaining), expired, setRemaining };
 };

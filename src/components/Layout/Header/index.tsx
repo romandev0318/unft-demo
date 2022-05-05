@@ -82,9 +82,9 @@ export const Header: React.FC = () => {
               Showcase
             </a>
           </Link>
-          <Link href='/rarity'>
+          <Link href='/#team'>
             <a className='hover:text-[#F8D47A] whitespace-nowrap transition ease-in-out delay-200'>
-              Rarity
+              Team
             </a>
           </Link>
         </nav>

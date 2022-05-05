@@ -3,7 +3,7 @@ import Head from "next/head";
 export const Meta: React.FC = () => (
   <Head>
     <meta property='og:type' content='website' />
-    <meta property='og:url' content='https://ua-nft.io' />
+    {/* <meta property='og:url' content='https://ua-nft.io' /> */}
     {/* <meta property='og:image' content='/img/unft-thumbnail.webp' /> */}
     <meta
       property='og:title'
@@ -13,7 +13,7 @@ export const Meta: React.FC = () => (
       property='og:description'
       content='Anyone can support Ukraine at this extremely difficult time'
     />
-    <meta property='og:site_name' content='UA NFT' />
+    <meta property='og:site_name' content='UNFT' />
     <meta property='twitter:card' content='summary' />
     <meta property='twitter:site' content='@UA__NFT' />
     {/* <meta property='twitter:image' content='/img/unft-thumbnail.webp' /> */}
@@ -55,8 +55,8 @@ export const Meta: React.FC = () => (
       color='#f8d47a'
     />
     <link rel='shortcut icon' href='/favicon/favicon.ico' />
-    <meta name='apple-mobile-web-app-title' content='UA NFT' />
-    <meta name='application-name' content='UA NFT' />
+    <meta name='apple-mobile-web-app-title' content='UNFT' />
+    <meta name='application-name' content='UNFT' />
     <meta name='msapplication-TileColor' content='#f8d47a' />
     <meta name='theme-color' content='#0a0b0f'></meta>
   </Head>

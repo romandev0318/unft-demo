@@ -33,7 +33,7 @@ const colors = {
 };
 
 export const DistributionItem: React.FC<Props> = ({ label, color, cut }) => (
-  <li className='flex relative justify-between rounded-2xl radial-border px-8 py-9'>
+  <li className='flex relative justify-between rounded-2xl radial-border px-4 sm:px-8 py-6 sm:py-9'>
     <span className='text-lg text-[#ABABAB] font-bold tracking-tight'>
       {label}
     </span>

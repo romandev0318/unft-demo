@@ -84,6 +84,19 @@ export const showcase: ShowcaseCardType[] = [
   {
     image: (
       <Image
+        src={ShowcaseImages.showcase7Image}
+        alt='UA-NFT #7'
+        className='object-cover'
+        layout='fill'
+        quality={30}
+        placeholder='blur'
+      />
+    ),
+    title: "UA-NFT #8",
+  },
+  {
+    image: (
+      <Image
         src={ShowcaseImages.showcase8Image}
         alt='UA-NFT #8'
         className='object-cover'
@@ -106,122 +119,5 @@ export const showcase: ShowcaseCardType[] = [
       />
     ),
     title: "UA-NFT #9",
-  },
-  {
-    image: (
-      <Image
-        src={ShowcaseImages.showcase10Image}
-        alt='UA-NFT #10'
-        className='object-cover'
-        layout='fill'
-        quality={30}
-        placeholder='blur'
-      />
-    ),
-    title: "UA-NFT #10",
-  },
-  {
-    image: (
-      <Image
-        src={ShowcaseImages.showcase11Image}
-        alt='UA-NFT #11'
-        className='object-cover'
-        layout='fill'
-        quality={30}
-        placeholder='blur'
-      />
-    ),
-    title: "UA-NFT #11",
-  },
-  {
-    image: (
-      <Image
-        src={ShowcaseImages.showcase12Image}
-        alt='UA-NFT #12'
-        className='object-cover'
-        layout='fill'
-        quality={30}
-        placeholder='blur'
-      />
-    ),
-    title: "UA-NFT #12",
-  },
-  {
-    image: (
-      <Image
-        src={ShowcaseImages.showcase13Image}
-        alt='UA-NFT #13'
-        className='object-cover'
-        layout='fill'
-        quality={30}
-        placeholder='blur'
-      />
-    ),
-    title: "UA-NFT #13",
-  },
-  {
-    image: (
-      <Image
-        src={ShowcaseImages.showcase14Image}
-        alt='UA-NFT #14'
-        className='object-cover'
-        layout='fill'
-        quality={30}
-        placeholder='blur'
-      />
-    ),
-    title: "UA-NFT #14",
-  },
-  {
-    image: (
-      <Image
-        src={ShowcaseImages.showcase15Image}
-        alt='UA-NFT #15'
-        className='object-cover'
-        layout='fill'
-        quality={30}
-        placeholder='blur'
-      />
-    ),
-    title: "UA-NFT #15",
-  },
-  {
-    image: (
-      <Image
-        src={ShowcaseImages.showcase16Image}
-        alt='UA-NFT #16'
-        className='object-cover'
-        layout='fill'
-        quality={30}
-        placeholder='blur'
-      />
-    ),
-    title: "UA-NFT #16",
-  },
-  {
-    image: (
-      <Image
-        src={ShowcaseImages.showcase17Image}
-        alt='UA-NFT #17'
-        className='object-cover'
-        layout='fill'
-        quality={30}
-        placeholder='blur'
-      />
-    ),
-    title: "UA-NFT #17",
-  },
-  {
-    image: (
-      <Image
-        src={ShowcaseImages.showcase18Image}
-        alt='UA-NFT #18'
-        className='object-cover'
-        layout='fill'
-        quality={30}
-        placeholder='blur'
-      />
-    ),
-    title: "UA-NFT #18",
   },
 ];

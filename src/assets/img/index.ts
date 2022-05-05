@@ -1,5 +1,4 @@
 import UNFTLogoImage from "@/public/img/UNFTLogo.png";
-import CGTLogoImage from "@/public/img/cgt.png";
 import heroBgImage from "@/public/img/hero-bg.png";
 import rarityHeroBgImage from "@/public/img/rarity-hero-bg.png";
 import collectionLeftImage from "@/public/img/collection-left.png";
@@ -15,7 +14,6 @@ import collectionImage from "@/public/img/collection.png";
 
 export {
   UNFTLogoImage,
-  CGTLogoImage,
   heroBgImage,
   rarityHeroBgImage,
   aboutImage,

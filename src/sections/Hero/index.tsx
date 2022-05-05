@@ -11,7 +11,7 @@ export const Hero: React.FC = () => (
     <h1 className='text-[27px] leading-10 md:leading-[5rem] md:text-[3.5rem] xl:text-[5rem] font-extrabold xl:leading-[6.25rem] text-[#F8D47A] tracking-tight'>
       <span className='text-[#3383E0]'>Ukrainian NFT Collection</span>
       <br />
-      The heroes of the war
+      of heroes this war
     </h1>
 
     <p className='text-[15px] leading-5 md:text-[1.5rem] text-white/80 font-medium mt-6'>
@@ -20,9 +20,8 @@ export const Hero: React.FC = () => (
 
     <Mint />
 
-    <p className='font-semibold text-[#F8D47A] text-xs leading-5 md:text-2xl md:leading-8 mt-14 md:mt-64 opacity-0 pointer-events-none'>
-      100% funds will be transferred to support <br /> the Ukrainian militaryand
-      the victims of this war.
+    <p className='font-semibold text-[#F8D47A] text-xs leading-5 md:text-2xl md:leading-8 mt-14 md:mt-72'>
+      This project is for demonstration purposes only.
     </p>
 
     <div className='absolute pt-0 xl:pt-[6.5rem] 2xl:pt-0 top-[84px] w-[780px] left-1/2 -translate-x-1/2 md:w-[1534px] xl:w-full 2xl:w-[1534px] md:top-44 h-full lg:h-[970px] xl:h-[84.6%] 2xl:h-[970px] rounded-none md:rounded-b-[100px] xl:rounded-b-[140px] overflow-hidden -z-10'>

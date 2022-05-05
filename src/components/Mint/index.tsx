@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ethers } from "ethers";
 import { ModalWrapper } from "../Modal";
 import { Timer } from "../Timer";
@@ -17,7 +17,7 @@ export const Mint: React.FC = () => {
     message?: string;
     tx?: string;
   }>();
-  const { remaining, expired } = useCountdown(
+  const { remaining, expired, setRemaining } = useCountdown(
     process.env.DAY_X || "April 1 2022"
   );
 
@@ -103,6 +103,14 @@ export const Mint: React.FC = () => {
     <>
       <ModalWrapper {...modal} open={open} closeModal={closeModal} />
       <Timer remaining={remaining} expired={expired}>
+        {expired && (
+          <button
+            className='absolute left-1/2 -translate-x-1/2 font-semibold underline text-xs leading-5 md:text-2xl md:leading-8'
+            onClick={() => setRemaining(10000)}
+          >
+            Start countdown
+          </button>
+        )}
         <button
           type='button'
           className={!expired || loading ? "btn-mint disabled" : "btn-mint"}
