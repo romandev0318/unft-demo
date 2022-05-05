@@ -3,8 +3,7 @@ import Head from "next/head";
 export const Meta: React.FC = () => (
   <Head>
     <meta property='og:type' content='website' />
-    {/* <meta property='og:url' content='https://ua-nft.io' /> */}
-    {/* <meta property='og:image' content='/img/unft-thumbnail.webp' /> */}
+    <meta property='og:url' content='https://unft-demo.vercel.app' />
     <meta
       property='og:title'
       content='Ukrainian NFT Collection of the heroes of the war'
@@ -15,8 +14,6 @@ export const Meta: React.FC = () => (
     />
     <meta property='og:site_name' content='UNFT' />
     <meta property='twitter:card' content='summary' />
-    <meta property='twitter:site' content='@UA__NFT' />
-    {/* <meta property='twitter:image' content='/img/unft-thumbnail.webp' /> */}
     <meta
       property='twitter:title'
       content='Ukrainian NFT Collection of the heroes of the war'

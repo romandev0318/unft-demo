@@ -15,7 +15,7 @@ import Head from "next/head";
 const Home: NextPage = () => (
   <Layout>
     <Head>
-      <title>UNFT - Demo</title>
+      <title>UNFT – Demo</title>
     </Head>
 
     <Hero />
